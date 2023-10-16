@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{ctexbook}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[]{amssymb}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=red,
+	filecolor=red,      
+	urlcolor=blue,
+	citecolor=red,
+}
+\usepackage{geometry}    % 引用 LaTeX 几何包
+\geometry{a4paper,scale=0.8}    % scale 设置版心占比
+% \geometry{a4paper,left=2cm,right=2cm,top=1cm,bottom=1cm}    % 这是直接给页边距的方式
+\usepackage{physics}
+\usepackage{simpler-wick}
+\usepackage{tikz-cd}
+
+\begin{document}
+
+\author{伊藤克司(Katsushi)}
+\title{共形場理論\\現代数理物理の基礎として}
+\date{\today}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+\include{./TeX_files/chapter00}
+\include{./TeX_files/chapter01}
+\include{./TeX_files/chapter02}
+\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter04}
+\include{./TeX_files/chapter05}
+\include{./TeX_files/chapter06}
+\include{./TeX_files/chapter07}
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}

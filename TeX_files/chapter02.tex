@@ -1,0 +1,419 @@
+\chapter{场和共形不变性}
+
+量子场论，要从场的局域函数，Lagrangian密度或作用量开始，作量子化（正则量子化或路径积分量子化）。场的关联函数由含源的配分函数计算，对称性在其中扮演了重要角色。 能动张量守恒来自Poincaré不变性，电荷守恒来自复场相位变换下的不变性。虽然这些对应全局的变换，但它们的局域版本，规范变换，通过Ward-Takahashi恒等式，很大程度上限制了关联函数的结构。本章解释共形不变性在场论中的意义。
+
+\section{作用量和守恒量}
+考虑经典场论中的共形不变性。经典理论中的共形对称性，是说作用量在共形变换下不变。2.1和2.2节是对场论的回顾。
+\section{场的共形变换}
+考虑 $d $维时空中 N 分量场 $\phi(x)=\left(\phi^{a}(x)\right)$ （ $a=1,\cdots,N $）在共形变换下的行为。首先，我们要考虑的场论是相对论理论，具有Poincaré不变性。先看Lorentz变换
+\begin{equation}
+	x^{\mu} \rightarrow x^{\prime \mu}=\Lambda^{\mu} {}_{\nu}x^{\nu}
+\end{equation}
+下的行为。这时场变换为：
+\begin{equation}
+	\phi^{a}(x) \rightarrow \phi^{\prime a}\left(x^{\prime}\right)=D(\Lambda)^{a}{ }_{b} \phi^{b}(x)
+\end{equation}
+
+从Lorentz变换 $\Lambda $到 $N\times N $矩阵 $D(\Lambda) $的映射： $\Lambda \mapsto D(\Lambda)$ ，是Lorentz群的 N 维表示。也就是说，
+
+对恒等元 $1$ ，有 $D(1)=1_N $（ 1$1_N $是$ N$ 阶恒等矩阵）；
+对Lorentz变换的复合 $\Lambda_3=\Lambda_2\Lambda_1$ ，有
+\begin{equation}
+	D\left(\Lambda_{3}\right)=D\left(\Lambda_{2}\right) D\left(\Lambda_{1}\right)
+\end{equation}
+对无穷小Lorentz变换 $\Lambda^{\mu}{}_{\nu}=\delta_{\nu}^{\mu}+\omega^{\mu}{}_{\nu} $，表示矩阵$ D(\Lambda) $是
+\begin{equation}
+	D(\Lambda)^{a}{}_{b}=\delta_{b}^{a}-\frac{i}{2} \omega_{\mu \nu}\left(S^{\mu \nu}\right)^{a}{}_{b}
+\end{equation}
+$N$ 阶矩阵$ S_{\mu \nu}$ 满足Lorentz代数的对易关系。
+
+在相对论场论中，作用量$ S$ 在Lorentz变换下不变，它是基本的场 $\phi( x)$ 及其导数 $\partial_\mu \phi(x)$ 的函数，Lagrangian密度 $\mathcal{L}\left(\phi, \partial_{\mu} \phi\right) $的积分：
+\begin{equation}
+	S=\int d^{d} x \mathcal{L}\left(\phi(x), \partial_{\mu} \phi(x)\right)
+\end{equation}
+出现在Lagrangian中的场，由Lorentz群的不可约表示分类。例如，标量场 $\phi(x) $在Lorentz变换下不变：
+\begin{equation}
+\phi^{\prime}\left(x^{\prime}\right)=\phi(x)
+\end{equation}
+向量场$ A_\mu(x)$变换为
+\begin{equation}
+	A_{\mu}^{\prime}\left(x^{\prime}\right)=\Lambda_{\mu}{}^{\nu} A_{\nu}(x)
+\end{equation}
+属于Lorentz群的$ N$ 维表示的场 $\phi_a(x)$ ，按 (2.2) 变换，点 $x$ 处场变化了
+\[\phi'^{a}(x)-\phi^{a}(x)=D(\Lambda)^{a}{ }_{b} \phi^{b}\left(\Lambda^{-1} x\right)-\phi^{a}(x)\]
+对无穷小变换，场的无穷小变化（称为Lie导数） $\delta_0\phi^a=\phi'^{a}(x)-\phi^a(x) $是
+\begin{equation}
+\begin{aligned} \delta_{0} \phi^{a}(x)&=\omega_{\mu \nu} \frac{1}{2}\left(x^{\mu} \partial^{\nu}-x^{\nu} \partial^{\mu}\right) \phi^{a}(x)-\frac{i}{2} \omega_{\mu \nu}\left(S^{\mu \nu}\right)^{a}{}_{b} \phi^{b}(x)\\ &=-\frac{i}{2} \omega_{\mu \nu}\left(L^{\mu \nu}\right)^{a} {}_{b}\phi^{b}(x) \end{aligned}
+\end{equation}
+这里，$ L^{\mu\nu} $是同时包含了坐标和场变换的Lorentz变换生成元：
+\begin{equation}
+	L^{\mu \nu}=i\left(x^{\mu} \partial^{\nu}-x^{\nu} \partial^{\mu}\right) 1_{N}+S^{\mu \nu}
+\end{equation}
+其满足Lorentz代数。
+
+对无穷小共形变换，生成元对场 $\phi(x)$ 的作用也可类似地得到，Lie导数是
+\begin{equation}
+	\delta_{0} \phi(x)=\left(-i \epsilon^{\mu} P_{\mu}-\frac{i}{2} \omega^{\mu \nu} L_{\mu \nu}-i \epsilon D-i b^{\mu} K_{\mu}\right) \phi(x)
+\end{equation}
+
+平移$P_\mu $，Lorentz变换 $L_{\mu\nu} $，标度变换 $D$ 和特殊共形变换 $K_\mu $的生成元对场 $\phi(x)$ 的作用是
+\begin{align} &P_{\mu} \phi(x)=-i \partial_{\mu} \phi(x)\\ &L_{\mu \nu} \phi(x)=i\left(x_{\mu} \partial_{\nu}-x_{\nu} \partial_{\mu}\right) \phi(x)+S_{\mu \nu} \phi(x)\\ &D \phi(x)=-i x^{\mu} \partial_{\mu} \phi(x)+i \Delta \phi(x)\\ &K_{\mu} \phi(x)=i\left(x^{2} \partial_{\mu}-2 x_{\mu} x^{\nu} \partial_{\nu}\right) \phi(x) +\left(\kappa_{\mu}+2 x_{\mu} i \Delta-x^{\nu} S_{\mu \nu}\right) \phi(x) \end{align}
+这里，$ \Delta$ ， $\kappa_\mu$ 是$ N $阶矩阵，满足对易关系
+\begin{align} &\left[\Delta, S_{\mu \nu}\right]=0 \\ &\left[\Delta, \kappa_{\mu}\right]=\kappa_{\mu} \\ &\left[\kappa_{\mu}, \kappa_{\nu}\right]=0\\ &\left[\kappa_{\rho}, S_{\mu \nu}\right]=i\left( \eta_{\rho \mu} \kappa_{\nu}-\eta_{\rho \nu} \kappa_{\mu}\right) \\ &\left[S_{\mu \nu}, S_{\rho \sigma}\right]=i\left(\eta_{\nu \rho} S_{\mu \sigma}+\eta_{\mu \sigma} S_{\nu \rho}-\eta_{\mu \rho} S_{\nu \sigma}-\eta_{\nu \sigma} S_{\mu \rho}\right) \end{align}
+
+如果$ \phi(x)$ 属于Lorentz群的不可约表示，那么所有与 $S_{\mu\nu} $对易的生成元正比于恒等矩阵。于是$ \Delta$ 正比于恒等矩阵，系数仍记作 $\Delta $。从而，由对易关系 (2.16) ，有 $\kappa_\mu=0 $。因此，在共形不变的场论中，基本的场除由Lorentz群的表示分类以外，还由标度变换表示中的参数 $\Delta$ 分类。$ \Delta$ 称为场 $\phi $的共形维数。
+
+如果$ \phi(x)$ 是标量场， $S_{\mu\nu}=0$ 。有限的共形变换 $x\to x^\prime$ 下，标量场变为
+\begin{equation}
+		\phi^{\prime}\left(x^{\prime}\right)=\left|\frac{\partial x^{\prime}}{\partial x}\right|^{-\frac{\Delta}{d}} \phi(x)
+\end{equation}
+$| \partial x^{\prime}/\partial x |$是共形变换的Jacobian。对Lorentz变换则是 $| \partial x^{\prime}/\partial x |=1 $，因此得到 (2.6) 。由共形变换下度规的变换规则 (1.14) ，有
+\begin{equation}
+	\Omega^{2}(x) \eta_{\mu \nu} \frac{\partial x^{\prime \mu}}{\partial x^{\rho}} \frac{\partial x^{\prime \nu}}{\partial x^{\sigma}}=\eta_{\rho \sigma}
+\end{equation}
+于是取行列式，得到Jacobian是
+\begin{equation}
+	\left|\frac{\partial x^{\prime}}{\partial x}\right|=\Omega^{-d}(x)
+\end{equation}
+
+特别地，对标度变换 $x'^\mu=\alpha x^\mu$ ， $\Omega=\alpha^{-1}$ ，因此场 $\phi(x)$ 变换为
+\begin{equation}
+\phi^{\prime}\left(x^{\prime}\right)=\alpha^{-\Delta} \phi(x)
+\end{equation}
+对特殊共形变换 (1.59) ，
+\begin{equation}
+	\Omega^{2}(x)=\left(x^{\prime 2}\right)^{2}=\left(1-2 b x+b^{2} x^{2}\right)^{-2}
+\end{equation}
+场变换为
+\begin{equation}
+		\phi^{\prime}\left(x^{\prime}\right)=\frac{1}{\left(1-2 b x+b^{2} x^{2}\right)^{\Delta}} \phi(x)
+\end{equation}
+
+标度变换 $x'^\mu=\alpha x^\mu$ 表示各处长度均匀地变为原来的 $\alpha $倍。因为质量量纲是长度的倒数量纲，具有质量的$ \Delta$ 次幂量纲的量在这标度变换下变为原来的 $\alpha^{-\Delta}$ 倍。于是由 (2.23) ， $\phi(x)$ 具有质量的 $\Delta$ 次幂量纲。
+
+\subsection{共形变换和守恒量}
+
+简单起见，本节考虑标量场。考虑标量场$ \phi(x)$ 在区域$ V $中的作用量 $S=\int_{V} d^{d} x \mathcal{L}\left(\phi, \partial_{\mu} \phi\right) $，在无穷小坐标变换
+\begin{equation}
+	x^{\mu} \rightarrow x^{\prime \mu}=x^{\mu}+\delta x^{\mu}(x)
+\end{equation}
+下的变化。这一坐标变换下，假定场变换为：$ \phi(x) \rightarrow \phi^{\prime}(x)=\phi(x)+\delta_0 \phi(x)$ 。Lagrangian的变化，要从 $\mathcal{L} $是标量，以及场的变化会引起它变化，这两方面来考虑，结果是
+\begin{equation}
+		\delta \mathcal{L}=\frac{\partial \mathcal{L}}{\partial \phi} \delta_{0} \phi+\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \delta_{0}\left(\partial_{\mu} \phi\right)+\delta x^{\mu} \partial_{\mu} \mathcal{L}
+\end{equation}
+利用 $\delta_0(\partial_\mu \phi)=\partial_\mu(\delta_0 \phi) $，这可改写成
+\begin{equation}
+	\delta \mathcal{L}=\left\{\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)}\right)\right\} \delta_{0} \phi+\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \delta_{0} \phi\right)+\delta x^{\mu} \partial_{\mu} \mathcal{L}
+\end{equation}
+此外， $d$ 维体积元变为：
+\begin{equation}
+	d^{d} x \rightarrow d^{d} x^{\prime}=d^{d} x\left|\frac{\partial x^{\prime}}{\partial x}\right|
+\end{equation}
+这里，Jacobian是
+\begin{equation}
+	\left|\frac{\partial x^{\prime}}{\partial x}\right|=\left|\delta_{\mu \nu}+\partial_{\mu} \delta x_{\nu}\right|=1+\partial_{\mu} \delta x^{\mu}
+\end{equation}
+这两方面放在一起，得到作用量变化了
+\begin{equation}
+	\begin{aligned} \delta S=&\int_{V} d^{d} x\Bigg\{(\partial_{\mu} \delta x^{\mu}) \mathcal{L}+\delta x^{\mu} \partial_{\mu} \mathcal{L} \\&+\left[\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)}\right)\right] \delta_{0} \phi+\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \delta_{0} \phi\right)\Bigg\}\end{aligned}
+\end{equation}
+利用Euler-Lagrange方程
+\begin{equation}
+	\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)}\right)=0
+\end{equation}
+，作用量的变化 $\delta S$ 可改写成全微分形式：
+\begin{equation}
+	\delta S=\int_{V} d^{d} x \partial_{\mu}\left\{\mathcal{L} \delta x^{\mu}+\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \delta_{0} \phi\right\}
+\end{equation}
+
+现在将无穷小变换的参数换成 $\epsilon $：
+$$
+	\delta x^{\mu}=\frac{\delta x^{\mu}}{\delta \epsilon} \delta \epsilon, \quad \delta_{0} \phi=\frac{\delta_{0} \phi}{\delta \epsilon} \delta \epsilon
+$$
+于是 (2.33) 成为
+\begin{equation}
+		\delta S=\int_{V} d^{d} x \partial_{\mu}\left\{\mathcal{L} \frac{\delta x^{\mu}}{\delta \epsilon}+\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \frac{\delta_{0} \phi}{\delta \epsilon}\right\} \delta \epsilon
+\end{equation}
+因为 $V$ 可以任意小，如果作用量在这变换下不变， $\delta S=0 $，那么流
+\begin{equation}
+	j^{\mu}=-\mathcal{L} \frac{\delta x^{\mu}}{\delta \epsilon}-\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \frac{\delta_{0} \phi}{\delta \epsilon}
+\end{equation}
+满足 $\partial^\mu j_\mu=0$ ， $j^0 $的$ d-1$ 维空间积分
+\begin{equation}
+	Q=\int d^{d-1} x j^{0}
+\end{equation}
+无关时间，也就是说，是守恒量。因此，如果作用量 (2.5) 在连续变换下不变，就存在守恒量，这称为\textbf{Noether定理}。
+
+例如，考虑全局平移 $\delta x^{\mu}=\epsilon^{\mu}$ ，这时
+\begin{equation}
+	\delta_{0} \phi(x)=\phi^{\prime}(x)-\phi(x)=\phi(x-\epsilon)-\phi(x)=-\epsilon^{\mu} \partial_{\mu} \phi(x)
+\end{equation}
+那么作用量变化了
+\begin{equation}
+	\delta S=\int_{V} d^{d} x \partial_{\mu}\left\{\mathcal{L} \delta_{\nu}^{\mu}-\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \partial_{\nu} \phi\right\} \epsilon^{\nu}
+\end{equation}
+如果平移后作用量不变，张量
+\begin{equation}
+	T_{\mu \nu}=\frac{\partial \mathcal{L}}{\partial\left(\partial^{\mu} \phi\right)} \partial_{\nu} \phi-\eta_{\mu \nu} \mathcal{L}
+\end{equation}
+满足
+\begin{equation}
+	\partial^{\mu} T_{\mu \nu}=0
+\end{equation}
+$T^{0\nu} $的空间积分
+\begin{equation}
+	P^{\nu}=\int d^{d-1} x T^{0 \nu}
+\end{equation}
+守恒。 $P^\mu$ 是代表场的能量和动量的 d 维向量。 $T_{\mu \nu} $称为能动张量。
+
+在相对论场论中，还有对应Lorentz变换的守恒流。对无穷小Lorentz变换 $\delta x^{\mu}=\omega^{\mu \nu} x_{\nu}$ ，令 $\epsilon=\omega^{\rho \sigma} $，上标 $\rho,\sigma $固定。无穷小变换下场的变化 (2.8) 代入 (2.35) ，得到对应Lorentz变换的流
+\begin{equation}
+	\begin{aligned} J^{\mu \rho \sigma}&=-\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)}\left(-\frac{i}{2} M^{\rho \sigma} \phi\right)-\mathcal{L} \frac{1}{2}\left(\eta^{\mu \rho} x^{\sigma}-\eta^{\mu \sigma} x^{\rho}\right)\\ &=-\frac{1}{2}\left(x^{\rho} T^{\mu \sigma}-x^{\sigma} T^{\mu \rho}\right) \end{aligned}
+\end{equation}
+
+在共形不变的场论中，还有对应标度变换和特殊共形变换的流。对无穷小标度变换 $\delta x^{\mu}=(1+\epsilon) x^{\mu}$ ，流是
+\begin{equation}
+	\begin{aligned} j_{D}^{\mu}&=-x^{\mu} \mathcal{L}-\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)}\left(-x^{\nu} \partial_{\nu} \phi-\Delta \phi\right)\\&=x_{\nu} T^{\mu \nu}+\Delta \frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \phi \end{aligned}
+\end{equation}
+这称为标度变换流。对应特殊共形变换的守恒流也可类似地得到。
+
+例如，考虑 $d $维中质量为$ m $的自由标量场 $\phi(x) $。Lagrangian是
+\begin{equation}
+\mathcal{L}=\frac{1}{2}\left(\partial_{\mu} \phi \partial^{\mu} \phi-m^{2} \phi^{2}\right)
+\end{equation}
+$\phi(x) $具有质量的 $\Delta=(d-2)/2$ 次幂量纲。由 (2.39) ，能动张量是
+\begin{equation}
+	T_{\mu \nu}=\partial_{\mu} \phi \partial_{\nu} \phi-\eta_{\mu \nu} \mathcal{L}
+\end{equation}
+从Klein-Gordon方程 $\left(\partial^{\mu} \partial_{\mu}+m^{2}\right) \phi=0 $，可直接验证 $\partial^{\mu} T_{\mu \nu}=0$ 。标度变换流是
+\begin{equation}
+	j_{D}^{\mu}=\partial^{\mu} \phi\left(x^{\nu} \partial_{\nu}\phi+\Delta \phi\right)-x^{\mu} \mathcal{L}
+\end{equation}
+它的散度是
+\[\partial_{\mu} j_{D}^{\mu}=m^{2} \phi^{2}\]
+
+因此， $m $非零时理论在标度变换下并非不变。无质量标量场的理论是共形不变的。一般地，含质量等有量纲参数的作用量，不是共形不变的。不过，经典的共形不变性不一定意味着量子的共形不变性。例如，四维Yang-Mills理论在经典情形，耦合常数不具有质量量纲，但在量子情形，标度不变性被破坏了。称为 $\mathcal{N}=4$ 超对称Yang-Mills理论的规范理论则是共形不变的。
+
+\section{路径积分和关联函数}
+
+计算场的关联函数是场论中的基本问题。本书中无法详细解释，请参考标准的场论教材。这里只总结一下对之后讨论必要的内容。
+
+场 $\varphi(x) $组成的算符 $A_{1}\left(x_{1}\right), \cdots, A_{N}\left(x_{N}\right) $的关联函数，用路径积分定义为
+\begin{equation}
+	\left\langle 0\left|T\left(A_{1}\left(x_{1}\right) \cdots A_{N}\left(x_{N}\right)\right)\right| 0\right\rangle=\frac{1}{Z} \int D \varphi A_{1}\left(x_{1}\right) \cdots A_{N}\left(x_{N}\right) e^{i S[\varphi]}
+\end{equation}
+这里， $|0\rangle $是对应真空的右矢，$ T(...)$ 指编时， $S[\varphi]$ 是作用量。$ Z$ 是配分函数
+\begin{equation}
+	Z=\int D \varphi e^{i S[\varphi]}
+\end{equation}
+考虑场 $\varphi(x) $的$ N $点关联函数
+\begin{equation}
+		\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right)\right)\right| 0\right\rangle=\frac{1}{Z} \int D \varphi \varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right) e^{i S[\varphi]}
+\end{equation}
+这可写成含源配分函数
+\begin{equation}
+		Z[J]=\int D \varphi e^{i S[\varphi]+i \int d^{d} x J(x) \varphi(x)}
+\end{equation}
+关于源 $J(x) $求泛函导数：
+\begin{equation}
+		\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right)\right)\right| 0\right\rangle=\left.\frac{1}{Z} \frac{\delta}{\delta J\left(x_{1}\right)} \cdots \frac{\delta}{\delta J\left(x_{N}\right)} Z[J]\right|_{J=0}
+\end{equation}
+
+我们来计算质量为 $m$ 的自由标量场的关联函数。作用量是
+\begin{equation}
+		S[\varphi]=\int d^{d} x\left\{\frac{1}{2} \partial_{\mu} \varphi \partial^{\mu} \varphi-\frac{1}{2} m^{2} \varphi^{2}\right\}
+\end{equation}
+引入Feynman传播子
+\begin{equation}
+		D_{F}(x-y)=\int \frac{d^{d} k}{(2 \pi)^{d}} \frac{e^{-i k(x-y)}}{k^{2}-m^{2}+i \epsilon}
+\end{equation}
+这是Klein-Gordon算符$ \partial^2+m^2 $的Green函数，满足 $\left(\partial^{2}+m^{2}\right) D_{F}(x-y)=-i \delta^{d}(x-y) $，$ \delta^{d}(x-y)$ 是 $d$ 维delta函数。
+作换元
+\begin{equation}
+	\varphi(x)=\varphi^{\prime}(x)-i \int d^{d} y D_{F}(x-y) J(y)
+\end{equation}
+可得
+\begin{equation}
+	Z[J]=N^{\prime} \exp \left(-\frac{1}{2} \int d^{d} x d^{d} y J(x) D_{F}(x-y) J(y)\right)
+\end{equation}
+$N' $是常数。代入 (2.51) ， $N $为奇数时 $\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right)\right)\right| 0\right\rangle=0 $， $N $为偶数时
+\begin{equation}
+		\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right)\right)\right| 0\right\rangle=\sum D_{F}\left(x_{i_{1}}-x_{i_{2}}\right) \cdots D_{F}\left(x_{i_{N-1}}-x_{i_{N}}\right)
+\end{equation}
+这里是对从 $\{1,\cdots,N\} $中取指标对 $\left(i_{1}, i_{2}\right), \cdots,\left(i_{N-1}, i_{N}\right) $的所有可能方式求和。特别地， $N=2$ 时，
+\begin{equation}
+		\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \varphi\left(x_{2}\right)\right)\right| 0\right\rangle=D_{F}\left(x_{1}-x_{2}\right)
+\end{equation}
+自由标量场的 $N $点关联函数可写成两点函数的乘积，这称为Wick定理。
+
+例如， $d$ 维Euclid空间中无质量标量场的传播子满足
+\begin{equation}
+		\partial_{\mu} \partial^{\mu} D(x)=-\delta^{d}(x)
+\end{equation}
+$\partial^\mu \partial_\mu $是 $d $维Laplacian。这一方程的解可用极坐标表示。径向坐标记作 $r$ ，$ d\geq 3 $时有
+\begin{equation}
+		D(x)=\frac{1}{(d-2) \Omega_{d}} \frac{1}{r^{d-2}}
+\end{equation}
+这里，$ \Omega_{d}=2 \pi^{d / 2} / \Gamma(d / 2)$ 是 $d$ 维单位球的表面积，$ \Gamma(d) $是gamma函数。 $d=2 $时有
+\begin{equation}
+	D(x)=\frac{1}{2 \pi} \ln \left(\frac{1}{r}\right)
+\end{equation}
+这个传播子在第3章将多次遇到。
+\section{共形Ward恒等式}
+不同于自由场的情形，有相互作用时关联函数很难精确求出，需要用一些近似方法，例如微扰论。不过，如果理论具有高度的对称性，关联函数的形式是可以确定的。在共形不变的场论中，关联函数的形式在多大程度上是可以确定的呢？Polyakov\footnote{A. M. Polyakov, JETP Lett. 12 (1970) 381 [Pisma Zh. Eksp. Teor. Fiz. 12 (1970) 538].}研究过这个问题。简单起见，接下来略去关联函数中的编时记号。
+
+在有限共形变换 $x\to x' $下，按 (2.20) 变换的场称为准初级场\footnote{局域共形变换下这样变换则称为初级场（primary field），见第3章。}（quasi primary field）。令 $\phi_i(x) (i=1,\cdots,N )$是共形维数为$ \Delta_i$ 的准初级场，也就是说，在共形变换下变为
+\begin{equation}
+	\phi_{i}^{\prime}\left(x^{\prime}\right)=\left|\frac{\partial x^{\prime}}{\partial x}\right|^{-\frac{\Delta_{i}}{d}} \phi_{i}(x)
+\end{equation}
+考虑这个准初级场的关联函数
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \cdots \phi_{N}\left(x_{N}\right)\right\rangle=\frac{1}{Z} \int D \varphi \phi_{1}\left(x_{1}\right) \cdots \phi_{N}\left(x_{N}\right) e^{i S[\varphi]}
+\end{equation}
+$\varphi $是用于定义 $\phi_i(x)$ 的基础的场。
+
+假定共形变换下作用量 $S[\varphi]$ 不变，路径积分的测度 $D\varphi $也不变。共形变换下 $\varphi$ 变为 $\varphi' $。在关联函数 (2.62) 中，将路径积分的变量从$ \varphi$ 换成$ \varphi'$ ，我们有
+\begin{equation}
+	\int D \varphi^{\prime} \phi_{1}^{\prime}\left(x_{1}\right) \cdots \phi_{N}^{\prime}\left(x_{N}\right) e^{i S\left[\varphi^{\prime}\right]}=\int D \varphi \phi_{1}\left(x_{1}\right) \cdots \phi_{N}\left(x_{N}\right) e^{i S[\varphi]}
+\end{equation}
+再将点 $x_i$ 换成 $x_i' $，由作用量和测度的共形不变性有
+\begin{equation}
+	\left\langle\phi_{1}^{\prime}\left(x_{1}^{\prime}\right) \cdots \phi_{N}^{\prime}\left(x_{N}^{\prime}\right)\right\rangle=\left\langle\phi_{1}\left(x_{1}^{\prime}\right) \cdots \phi_{N}\left(x_{N}^{\prime}\right)\right\rangle
+\end{equation}
+代入 (2.61) ，得到
+\begin{equation}
+	\left\langle\phi_1\left(x_{1}\right) \cdots \phi_{N}\left(x_{N}\right)\right\rangle=\prod_{i=1}^{N}\left|\frac{\partial x^{\prime}}{\partial x}\right|_{x=x_{i}}^{\frac{\Delta_{i}}{d}}\left\langle\phi\left(x_{1}^{\prime}\right) \cdots \phi_{N}\left(x_{N}^{\prime}\right)\right\rangle
+\end{equation}
+这里， $|\partial x'/\partial x|_{x=x_i} $是 $x_i $处的Jacobian。准初级场关联函数满足的关系 (2.65) ，称为\textbf{共形Ward恒等式}。这个关系能在多大程度上确定关联函数的形式呢？
+
+首先考虑Poincaré变换 $x \rightarrow x^{\prime}=\Lambda x+a $，这时 $|\partial x'/\partial x|=1$ ，关联函数不变：
+\begin{equation}
+	\left\langle\phi_1\left(x_{1}\right) \cdots \phi_{N}\left(x_{N}\right)\right\rangle=\left\langle\phi\left(x_{1}^{\prime}\right) \cdots \phi_{N}\left(x_{N}^{\prime}\right)\right\rangle
+\end{equation}
+关联函数在均匀的平移（相当于 $\Lambda=1 $时）下不变，说明对关联函数来说，没有特殊的坐标原点，它是差 $x_i-x_j$ 的函数。此外，在Lorentz变换 $x^{\prime}=\Lambda x $下不变，说明它是差 $x_i-x_j $的长度，也就是
+\begin{equation}
+	r_{i j} \equiv\left|x_{i}-x_{j}\right|=\sqrt{\left(x_{i}-x_{j}\right)^{2}}
+\end{equation}
+的函数。我们从Poincaré不变性，发现$ N $点关联函数可写成
+\begin{equation}
+	\left\langle\phi\left(x_{1}\right) \cdots \phi_{N}\left(x_{N}\right)\right\rangle=G^{(N)}\left(\left\{r_{i j}\right\}\right)
+\end{equation}
+这里，$ \{r_{i j}\} $表示独立变量 $r_{ij} (i<j )$的集合。接下来从共形不变性，还能进一步限制关联函数。我们考察具体的例子。
+\subsection{两点函数}
+考虑两点函数
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right)\right\rangle=G^{(2)}(r)
+\end{equation}
+这里 $r=r_{12}$ 。共形变换 $x\to x' $的Jacobian是 $|\partial x'/\partial x|=\Omega^{-d}(x) $，共形Ward恒等式成为
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right)\right\rangle=\Omega^{-\Delta_{1}}\left(x_{1}\right) \Omega^{-\Delta_{2}}\left(x_{2}\right)\left\langle\phi_{1}\left(x_{1}^{\prime}\right) \phi_{2}\left(x_{2}^{\prime}\right)\right\rangle
+\end{equation}
+
+标度变换 $x^{\mu} \rightarrow x^{\prime \mu}=\alpha x^{\mu}$ 下，Jacobian是 $|\partial x'/\partial x|=\alpha^d $，两点函数 (2.69) 的共形Ward恒等式成为
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right)\right\rangle=\alpha^{\Delta_{1}+\Delta_{2}}\left\langle\phi_{1}\left(x_{1}^{\prime}\right) \phi_{2}\left(x_{2}^{\prime}\right)\right\rangle
+\end{equation}
+用$ G^{(2)}(r)$ 表示是
+\begin{equation}
+	G^{(2)}(r)=\alpha^{\Delta_{1}+\Delta_{2}} G^{(2)}(\alpha r)
+\end{equation}\
+令$\alpha r=r_0 $，右边用 $r$ 和 $r_0 $改写成
+\begin{equation}
+	G^{(2)}(r)=\frac{r_{0}^{\Delta_{1}+\Delta_{2}} G^{(2)}\left(r_{0}\right)}{r^{\Delta_{1}+\Delta_{2}}}
+\end{equation}
+固定$ r_0$ ，我们得到两点函数形如
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right)\right\rangle=\frac{C_{12}}{\left|x_{1}-x_{2}\right|^{\Delta_{1}+\Delta_{2}}}
+\end{equation}
+$C_{12} $是常数。特殊共形变换 (1.59) 下，Jacobian是 $|\partial x'/\partial x|=\left(1-2 b x+b^{2} x^{2}\right)^{-d}$ 。在两点函数的共形Ward恒等式中，代入从标度不变性得到的形式 (2.74) ，得到
+\begin{equation}
+	\begin{aligned} \frac{C_{12}}{\left|x_{1}-x_{2}\right|^{\Delta_{1}+\Delta_{2}}}=& \frac{1}{\left(1-2 b x_{1}+b^{2} x_{1}^{2}\right)^{\Delta_{1}}\left(1-2 b x_{2}+b^{2} x_{2}^{2}\right)^{\Delta_{2}}} \\ & \times \frac{C_{12}}{\left|x_{1}^{\prime}-x_{2}^{\prime}\right|^{\Delta_{1}+\Delta_{2}}} \end{aligned}
+\end{equation}
+再由两点间距离 $|x_i-x_j| $在特殊共形变换 (1.59) 下的变换行为：
+\begin{equation}
+	\left|x_{i}^{\prime}-x_{j}^{\prime}\right|=\frac{\left|x_{i}-x_{j}\right|}{\left(1-2 b x_{i}+b^{2} x_{i}^{2}\right)^{\frac{1}{2}}\left(1-2 b x_{j}+b^{2} x_{j}^{2}\right)^{\frac{1}{2}}}
+\end{equation}
+我们有
+\begin{equation}
+	\begin{aligned} \frac{C_{12}}{\left|x_{1}-x_{2}\right|^{\Delta_{1}+\Delta_{2}}}=& \frac{1}{\left(1-2 b x_{1}+b^{2} x_{1}^{2}\right)^{\Delta_{1}}\left(1-2 b x_{2}+b^{2} x_{2}^{2}\right)^{\Delta_{2}}} \times \\ & \frac{C_{12}\left(1-2 b x_{1}+b^{2} x_{1}^{2}\right)^{\frac{\Delta_{1}+\Delta_{2}}{2}}\left(1-2 b x_{2}+b^{2} x_{2}^{2}\right) \frac{\Delta_{1}+\Delta_{2}}{2}}{\left|x_{1}-x_{2}\right|^{\Delta_{1}+\Delta_{2}}} \end{aligned}
+\end{equation}
+这要对任意 $x_1,x_2$ 成立，需要有 $\Delta_{1}=(\Delta_{1}+\Delta_{2})/2=\Delta_{2}$ ，也就是 $\Delta_1=\Delta_2 $。于是，准初级场的两点函数是
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right)\right\rangle=\left\{\begin{array}{cc} \frac{C_{12}}{\left|x_{1}-x_{2}\right|^{2 \Delta_{1}}} &, \Delta_{1}=\Delta_{2} \\ 0 &, \Delta_{1} \neq \Delta_{2} \end{array}\right.
+\end{equation}
+
+将这个式子应用于 d 维中无质量标量场 $\phi(x)$ 的两点函数。这个标量场的共形维数是$ \Delta=(d-2)/2 $，我们有
+\begin{equation}
+	\left\langle\phi\left(x_{1}\right) \phi\left(x_{2}\right)\right\rangle=\frac{C}{\left|x_{1}-x_{2}\right|^{d-2}}
+\end{equation}
+这确实与 (2.59) 中 $d$ 维传播子 $D(x)$ 的幂律行为 $r^{-(d-2)} $一致。
+
+\subsection{三点函数}
+接下来考虑准初级场的三点函数
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi_{3}\left(x_{3}\right)\right\rangle=G^{(3)}\left(r_{12}, r_{23}, r_{31}\right)
+\end{equation}
+由Poincaré不变性，这是两点间距离 $r_{12},r_{23},r_{31} $的函数。一般的共形变换下有
+\begin{equation}
+	\begin{aligned} \left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi_{3}\left(x_{3}\right)\right\rangle=& \Omega^{-\Delta_{1}}\left(x_{1}\right) \Omega^{-\Delta_{2}}\left(x_{2}\right) \Omega^{-\Delta_{3}}\left(x_{3}\right) \\ & \times\left\langle\phi_{1}\left(x_{1}^{\prime}\right) \phi_{2}\left(x_{2}^{\prime}\right) \phi\left(x_{3}^{\prime}\right)\right\rangle \end{aligned}
+\end{equation}
+标度变换 $x'=\alpha x $下， $G^{(3)}$ 满足
+\begin{equation}
+	G^{(3)}\left(r_{12}, r_{23}, r_{31}\right)=\alpha^{\Delta_{1}+\Delta_{2}+\Delta_{3}} G^{(3)}\left(\alpha r_{12}, \alpha r_{23}, \alpha r_{31}\right)
+\end{equation}
+与两点函数一样，令 $\alpha r_{12}=r^0_{12}$ ，得到
+\begin{equation}
+	G^{(3)}\left(r_{12}, r_{23}, r_{31}\right)=\frac{\left(r_{12}^{0}\right)^{\Delta_{1}+\Delta_{2}+\Delta_{3}}}{\left(r_{12}\right)^{\Delta_{1}+\Delta_{2}+\Delta_{3}}} G^{(3)}\left(r_{12}^{0}, \frac{r_{12}^{0} r_{23}}{r_{12}}, \frac{r_{12}^{0} r_{31}}{r_{12}}\right)
+\end{equation}
+右边的$ r_{23}/r_{12},r_{31}/r_{12} $如果足够小，可以进行展开。于是三点函数形如
+\begin{equation}
+	G^{(3)}\left(r_{12}, r_{23}, r_{31}\right)=\sum_{a, b, c} \frac{C_{a b c}}{r_{12}^{a} r_{23}^{b} r_{31}^{c}}
+\end{equation}
+这里，幂次 $a,b,c $满足 $a+b+c=\Delta_{1}+\Delta_{2}+\Delta_{3} $。考\begin{equation}
+	虑特殊共形变换下的变换行为，各项要满足
+\frac{C_{a b c}}{r_{12}^{a} r_{23}^{b} r_{31}^{c}}=\frac{1}{\gamma_{1}^{\Delta_{1}} \gamma_{2}^{\Delta_{2}} \gamma_{3}^{\Delta_{3}}} \frac{C_{a b c} \gamma_{1}^{\frac{a+c}{2}} \gamma_{2}^{\frac{a+b}{2}} \gamma_{3}^{\frac{b+c}{2}}}{r_{12}^{a} r_{23}^{b} r_{31}^{c}}
+\end{equation}\
+这里， $\gamma_{i}=1-2 b x_{i}+b^{2} x_{i}^{2} $。由此，幂次 $a,b,c $满足
+\begin{align} &\Delta_{1}=\frac{a+c}{2}\\ &\Delta_{2}=\frac{a+b}{2}\\ &\Delta_{3}=\frac{b+c}{2} \end{align}
+解得
+\begin{align} &a=\Delta_{1}+\Delta_{2}-\Delta_{3}\\ &b=\Delta_{2}+\Delta_{3}-\Delta_{1}\\ &c=\Delta_{3}+\Delta_{1}-\Delta_{2}\end{align}
+于是，准初级场的三点函数形如
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi\left(x_{3}\right)\right\rangle=\frac{C_{123}}{r_{12}^{\Delta_{1}+\Delta_{2}-\Delta_{3}} r_{23}^{\Delta_{2}+\Delta_{3}-\Delta_{1}} r_{31}^{\Delta_{3}+\Delta_{1}-\Delta_{2}}}
+\end{equation}
+$C_{123}$ 是常数。
+
+\subsection{四点函数}
+准初级场的两点和三点函数，已经从共形不变性确定了。那么四点以上的关联函数呢？考虑四点函数
+\begin{equation}
+		\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi_{3}\left(x_{3}\right) \phi_{4}\left(x_{4}\right)\right\rangle=G^{(4)}\left(r_{12}, r_{13}, r_{14}, r_{23}, r_{24}, r_{34}\right)
+\end{equation}\
+根据标度变换和特殊共形变换下的变换行为，右边可展开成形如
+\begin{equation}
+	\sum_{a, b, c, d, e, f} \frac{C_{a b c d e f}}{r_{12}^{a} r_{13}^{b} r_{14}^{c} r_{23}^{d} r_{24}^{e} r_{34}^{f}}
+\end{equation}
+这里，幂次 $a,b,c,d,e,f $满足
+\begin{equation}
+	a+b+c+d+e+f=\Delta_{1}+\Delta_{2}+\Delta_{3}+\Delta_{4}
+\end{equation}
+和
+\begin{align} &\Delta_{1}=\frac{a+b+c}{2}\\ &\Delta_{2}=\frac{a+d+e}{2}\\ &\Delta_{3}=\frac{b+d+f}{2}\\ &\Delta_{4}=\frac{c+d+f}{2} \end{align}
+解得
+\begin{align} &a=\frac{\Delta}{3}-\Delta_{1}-\Delta_{2}+\alpha+\beta\\ &b=\frac{\Delta}{3}-\Delta_{1}-\Delta_{3}-\alpha\\ &c=\frac{\Delta}{3}-\Delta_{1}-\Delta_{4}-\beta\\ &d=\frac{\Delta}{3}-\Delta_{2}-\Delta_{3}-\beta\\ &e=\frac{\Delta}{3}-\Delta_{2}-\Delta_{4}-\alpha\\ &f=\frac{\Delta}{3}-\Delta_{3}-\Delta_{4}+\alpha+\beta \end{align}
+这里， $\Delta=\Delta_1+\Delta_2+\Delta_3+\Delta_4 $， $\alpha,\beta$ 是任意参数。因此， (2.94) 成为
+\begin{equation}
+	\sum_{\alpha, \beta} C_{\alpha, \beta}\left(\frac{r_{12} r_{34}}{r_{13} r_{24}}\right)^{-\alpha}\left(\frac{r_{12} r_{34}}{r_{23} r_{41}}\right)^{-\beta} \sum_{i<j} r_{i j}^{-\Delta_{i}-\Delta_{j}+\Delta / 3}
+\end{equation}
+不像三点函数，四点函数的形式没能从共形不变性唯一确定，而是形如
+\begin{equation}
+	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right) \phi_{3}\left(x_{3}\right) \phi_{4}\left(x_{4}\right)\right\rangle=F\left(\frac{r_{12} r_{34}}{r_{13} r_{24}}, \frac{r_{12} r_{34}}{r_{23} r_{41}}\right) \sum_{i<j} r_{i j}^{-\Delta_{i}-\Delta_{j}+\Delta / 3}
+\end{equation}
+这里的
+\[
+\frac{r_{12} r_{34}}{r_{13} r_{24}}, \frac{r_{12} r_{34}}{r_{23} r_{41}}\]
+称为\textbf{交比（cross ratio）}，是标度变换和特殊共形变换下的不变量。
+
+$N $点函数也类似，如何依赖于交比$r_{ij}r_{kl}/r_{jk}r_{il} $无法从全局共形不变性确定。不过，在二维，对局域共形变换的共形Ward恒等式将进一步限制关联函数，并控制多点函数的结构。从下章开始，介绍本书的主题，二维共形场论。二维共形场论中的局域共形对称性非常有用，关联函数的结构可仅从对称性确定，不必考虑场的作用量等微观细节。因此，之后的重点将转到对称性及其表示，更加抽象，但希望大家慢慢跟上。
+
+
+

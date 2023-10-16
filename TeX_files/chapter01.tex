@@ -1,0 +1,395 @@
+\chapter{共形变换}
+
+共形变换是不改变两向量间夹角的变换。本章首先讨论$ d$ 维时空中的共形变换及其性质，接下来再讨论本书的主题，二维共形变换。
+
+\section{正交变换}
+考虑 $d$ 维Euclid空间 $\mathbb{R}^d$ 。取直角坐标 $x^{\mu}=\left(x^{0}, \cdots, x^{d-1}\right) $， $\mathbb{R}^d $上定义有平直度规
+\begin{equation}
+	g_{\mu \nu}=\left(\begin{array}{ccc} 1 & & 0 \\ & \ddots & \\ 0 & & 1 \end{array}\right)
+\end{equation}
+线元表示成
+\begin{equation}
+	d s^{2}=g_{\mu \nu} d x^{\mu} d x^{\nu}=\left(d x^{0}\right)^{2}+\cdots+\left(d x^{d-1}\right)^{2}
+\end{equation}
+坐标变换 $x^\mu \to x'^\mu $下，度规变为
+\begin{equation}
+		g_{\mu \nu} \rightarrow g_{\mu \nu}^{\prime}=\frac{\partial x^{\rho}}{\partial x^{\prime \mu}} \frac{\partial x^{\sigma}}{\partial x^{\prime \nu}} g_{\rho \sigma}
+\end{equation}
+特别地，不改变度规的坐标 $x^\mu$ 的线性变换
+\begin{equation}
+	x^{\mu} \rightarrow x^{\prime \mu}=\Lambda^{\mu} {}_{\nu}x^{\nu}
+\end{equation}
+称为正交变换。这时， $d\times d $矩阵 $\Lambda^\mu{}_\rho $满足
+\begin{equation}
+	g_{\mu\nu}\Lambda^\mu{}_\rho \Lambda^\nu{}_\sigma=g_{\rho\sigma}
+\end{equation}
+
+正交变换保持两点间距离的平方$ (x_1-x_2)^2$，以及位置向量 $x^\mu,y^\mu $间的内积 $x\cdot y=g_{\mu \nu} x^{\mu} y^{\nu} $，因此，设 $x^\mu,y^\mu$ 间的夹角为 $\theta $，
+\begin{equation}
+	\cos \theta=\frac{x y}{\left(x^{2}\right)^{\frac{1}{2}}\left(y^{2}\right)^{\frac{1}{2}}}
+\end{equation}
+也不变。正交变换全体构成群，称为正交群，写作 $O(d) $。无穷小变换生成的子群称为特殊正交群，写作 $SO(d)$ 。
+
+考虑无穷小正交变换
+\begin{equation}
+x^{\prime \mu}=x^{\mu}+\epsilon^{\mu}{}_{\nu} x^{\nu}, \quad \Lambda^{\mu}{}_{\nu}=\delta^{\mu}{}_{\nu}+\epsilon^{\mu}{}_{\nu}
+\end{equation}
+无穷小参数$ \epsilon_{\mu \nu}\left(=g_{\mu \rho} \epsilon^{\rho}{}_{\nu}\right) $满足
+\begin{equation}
+		\epsilon_{\mu \nu}+\epsilon_{\nu \mu}=0
+\end{equation}
+也就是关于指标 $\mu\nu $反对称。这个无穷小变换的生成元，由沿 $x^\mu$ 的微分算子 $\partial_{\mu}=\frac{\partial}{\partial x^{\mu}}$ 定义，表示成
+\begin{equation}
+		M^{\mu \nu}=i\left(x^{\mu} \partial^{\nu}-x^{\nu} \partial^{\mu}\right)
+\end{equation}
+满足对易关系
+\begin{equation}
+		\left[M^{\mu \nu}, M^{\rho \sigma}\right]=i\left(g^{\nu \rho} M^{\mu \sigma}-g^{\mu \rho} M^{\nu \sigma}-g^{\nu \sigma} M^{\mu \rho}+g^{\mu \sigma} M^{\nu \rho}\right)
+\end{equation}
+这是Lie群 $SO(d) $的Lie代数 $\mathfrak{so}(d) $的对易关系。
+
+整体平移变换
+\begin{equation}
+	x^{\mu} \rightarrow x^{\prime \mu}=x^{\mu}+a^{\mu}
+\end{equation}
+也不改变度规。相应的无穷小变换生成元是
+\begin{equation}
+	P^{\mu}=-i \partial^{\mu}
+\end{equation}
+除了 (1.10) ，$M^{\mu\nu}$ 和$ P^\mu $还满足对易关系
+\begin{equation}
+	\begin{array}{l} {\left[P^{\mu}, M^{\rho \sigma}\right]=i\left(g^{\mu \rho} P^{\sigma}-g^{\mu \sigma} P^{\rho}\right)} \\ {\left[P^{\mu}, P^{\nu}\right]=0} \end{array}
+\end{equation}
+正交变换和平移变换构成的群称为Euclid群。
+
+如果 $d $维时空度规 $g_{\mu\nu} $，是Euclid空间的度规 (1.1) 中 $p $个系数换成负的，称为 $(p,q) $型不定度规（ $q=d-p $）。这时保度规线性变换全体构成的群记作 $O(p,q)$ 。特别地，$ O(1,3)$ 称为Lorentz群，Lorentz变换和平移变换构成的群称为Poincaré群。
+
+\section{共形变换}
+
+$d $维Euclid变换不改变度规。考虑推广它，以容许使度规 $g_{\mu\nu}$ 乘上一标度因子的坐标变换 $x^{\mu} \rightarrow x^{\prime \mu} $。这样的变换称为共形变换。共形变换下度规变为
+\begin{equation}
+	g_{\mu \nu} \rightarrow g_{\mu \nu}^{\prime}\left(x^{\prime}\right)=\Omega^{2}(x) g_{\mu \nu}
+\end{equation}
+
+
+这个变换下，点 $x$ 处的两向量 $A^\mu,B^\mu$ 的内积 $A \cdot B=g_{\mu \nu} A^{\mu} B^{\nu} $乘上了 $\Omega^2 $， $A^2,B^2$ 也乘上了同样的数，因此 $A \cdot B /\left(A^{2}\right)^{1 / 2}\left(B^{2}\right)^{1 / 2} $不变，向量 $A^\mu,B^\mu$ 间的夹角就不变。Euclid变换下，向量的长度和所成的夹角都不变（合同变换）。共形变换下，则是夹角不变但长度可能变。
+
+\subsection{无穷小变换}
+
+我们来求 d 维Euclid空间中的无穷小共形变换。首先，考虑无穷小变换
+\begin{equation}
+	x^{\mu} \rightarrow x^{\prime \mu}=x^{\mu}-\epsilon^{\mu}(x)
+\end{equation}
+Jacobian及其逆是
+\begin{equation}
+	\frac{\partial x^{\prime \mu}}{\partial x^{\nu}}=\delta_{\nu}^{\mu}-\partial_{\nu} \epsilon^{\mu}(x), \quad \frac{\partial x^{\mu}}{\partial x^{\prime \nu}}=\delta_{\nu}^{\mu}+\partial_{\nu} \epsilon^{\mu}(x)
+\end{equation}
+因此度规变为
+\begin{equation}
+	\begin{aligned} g_{\mu \nu}^{\prime}&=g_{\rho \sigma} \frac{\partial x^{\rho}}{\partial x^{\prime \mu}} \frac{\partial x^{\sigma}}{\partial x^{\prime \nu}}\\ &=g_{\mu \nu}+\partial_{\mu} \epsilon_{\nu}+\partial_{\nu} \epsilon_{\mu} \end{aligned}
+\end{equation}
+
+
+如果和原来的度规差一标度因子，像 (1.14) 那样，那么 $\epsilon_\mu$ 必须满足条件
+\begin{equation}
+	\partial_{\mu}\epsilon_{\nu}+\partial_{\nu}\epsilon_{\mu}=\omega(x) g_{\mu \nu}
+\end{equation}
+这里，无穷小函数 $\omega(x)$ 同标度因子 $\Omega(x)$ 的关系是
+\begin{equation}
+	\Omega(x)=1+\frac{\omega(x)}{2}
+\end{equation}
+(1.18) 两边取迹得到
+
+\begin{equation}
+2 \partial^{\mu} \epsilon_{\mu}=d \omega(x)
+\end{equation}
+于是$ \omega(x)$ 可用 $\epsilon_\mu(x)$ 表示为
+
+\begin{equation}
+	\omega(x)=\frac{2}{d} \partial^{\mu} \epsilon_{\mu}
+\end{equation}
+
+从共形变换的条件 (1.18) ，可以再得到一个 $\epsilon_\mu$ 满足的条件。首先， (1.18) 两边作用上微分算子 $\partial_\rho$ ，得到
+
+\begin{equation}
+	\partial_{\rho} \partial_{\mu} \epsilon_{\nu}+\partial_{\rho} \partial_{\nu} \epsilon_{\mu}=\partial_{\rho} \omega g_{\mu \nu}
+\end{equation}
+这个式子关于指标 $(\mu,\nu,\rho) $轮换，每次改变符号，然后相加，得到
+\begin{equation}
+	-\partial_{\rho} \omega g_{\mu \nu}+\partial_{\mu} \omega g_{\nu \rho}+\partial_{\nu} \omega g_{\rho \mu}=2 \partial_{\mu} \partial_{\nu} \epsilon_{\rho}
+\end{equation}
+这个式子两边乘上度规 $g^{\mu\nu}$ ，缩并得到
+\begin{equation}
+		(-d+2) \partial_{\rho} \omega=2 \partial^{\mu} \partial_{\mu} \epsilon_{\rho}
+\end{equation}
+也就是说， $\epsilon_\rho$ 作用上Laplacian $\partial^{\mu} \partial_{\mu}$ ，可用 $\omega$ 表示为
+\begin{equation}
+	\partial^{\mu} \partial_{\mu} \epsilon_{\rho}=\frac{2-d}{2} \partial_{\rho} \omega
+\end{equation}
+因此， (1.18) 两边作用上 $\partial^{\mu} \partial_{\mu}$ ，再由 (1.25) ，可得到关于 $\omega$ 的方程
+\begin{equation}
+	\left(\partial^{\rho} \partial_{\rho} g_{\mu \nu}+(d-2) \partial_{\mu} \partial_{\nu}\right) \omega(x)=0
+\end{equation}
+这个式子关于 $\mu$,$\nu$ 求迹得到
+\begin{equation}
+	(d-1) \partial^{\mu} \partial_{\mu} \omega(x)=0
+\end{equation}
+
+因此， $d=1$ 时， $\omega(x)$ 不用满足任何条件。也就是说，一维空间中任何坐标变换都是共形变换。当然是这样，一维空间中定义不了角度。 $d\geq 2$ 时，无穷小标度因子满足
+
+\begin{equation}
+	\partial^{\mu} \partial_{\mu} \omega(x)=0
+\end{equation}
+$d>2$ 时，从 (1.26) 可知， $\omega(x)$ 还必须满足
+
+\begin{equation}
+	\partial_{\mu} \partial_{\nu} \omega(x)=0
+\end{equation}
+$d=2$ 时只需满足 (1.28) 。
+
+考虑 $d>2$ 时的共形变换。因为二阶导数为零， $\omega(x)$ 最多是 $x$ 的一次函数：
+\begin{equation}
+	\omega(x)=A+B_{\mu} x^{\mu}
+\end{equation}
+代入 (1.23) 得到
+\begin{equation}
+		\partial_{\mu} \partial_{\nu} \epsilon_{\rho}=\frac{1}{2}\left(-B_{\rho} g_{\mu \nu}+B_{\mu} g_{\nu \rho}+B_{\nu} g_{\rho \mu}\right)
+\end{equation}
+右边是常向量。因此， $\epsilon_\mu $是 $x^\mu $的二次函数，可展开成
+\begin{equation}
+		\epsilon_{\mu}(x)=a_{\mu}+b_{\mu \nu} x^{\nu}+c_{\mu \nu \rho} x^{\nu} x^{\rho}
+\end{equation}
+
+这里， $a_\mu,b_{\mu\nu},c_{\mu\nu\rho}$ 是常数， $c_{\mu\nu\rho} $关于后两指标对称： $c_{\mu \nu \rho}=c_{\mu \rho \nu} $。将 (1.32) 代入 (1.21) ，得到
+\begin{equation}
+		\omega(x)=\frac{2}{d}\left(b^{\mu}{}_{\mu}+2 c^{\mu}{}_{\mu \rho} x^{\rho}\right)
+\end{equation}
+因此， $\omega $的展开式 (1.30) 中的系数 $A,B $同 $b,c $的关系是
+\begin{equation}
+	A=\frac{2}{d} b^{\mu}{}_{\mu}, \quad B_{\mu}=\frac{4}{d} c^{\nu}{}_{\nu \mu}
+\end{equation}
+那么 $A,B$ 由 $a,b,c $确定了， (1.32) 代入 (1.31) 和 (1.18) ，可进一步限制 $b,c$ 的形式。事实上，代入后得到
+	\begin{align} &2 c_{\rho \mu \nu}=\frac{1}{2}\left(-B_{\rho} g_{\mu \nu}+B_{\mu} g_{\nu \rho}+B_{\nu} g_{\rho \mu}\right)\\ &b_{\mu \nu}+b_{\nu \mu}+2\left(c_{\mu \nu \rho}+c_{\nu \mu \rho}\right) x^{\rho}=\left(A+B_{\rho} x^{\rho}\right) g_{\mu \nu} \end{align}
+于是
+		\begin{align} &b_{\mu \nu}+b_{\nu \mu}=A g_{\mu \nu}\\ &c_{\mu \nu \rho}=\frac{1}{4}\left(-B_{\mu} g_{\nu \rho}+B_{\nu} g_{\rho \mu}+B_{\rho} g_{\mu \nu}\right) \end{align}
+
+由此， $c_{\mu\nu\rho}$ 由 $B_\mu$ 表示，将$ b_{\mu\nu}$写成对称部分 $b_{\mu\nu}^S$ 和反对称部分 $b_{\mu\nu}^A$ 之和，那么对称部分正比于度规，是$ \frac{A}{2} g_{\mu \nu} $。
+
+总结一下，无穷小变换可分成以下几类：
+\begin{itemize}
+	\item 平移
+	\begin{equation}
+		x^{\prime \mu}=x^{\mu}-a^{\mu}
+	\end{equation}	
+	\item 旋转
+	\begin{equation}
+		x^{\prime \mu}=x^{\mu}-b^{A \mu \nu} x_{\nu}, \quad b^{A \mu \nu}=-b^{A \nu \mu}
+	\end{equation}
+	\item 标度变换
+	\begin{equation}
+		x^{\prime \mu}=x^{\mu}-\frac{A}{2} x^{\mu}
+	\end{equation}
+	\item 特殊共形变换
+	\begin{equation}
+		x^{\prime \mu}=x^{\mu}-\frac{1}{4}\left(-B^{\mu} x^{2}+2 x^{\mu} B^{\nu} x_{\nu}\right)
+	\end{equation}
+\end{itemize}
+这些无穷小变换的生成元可表示为
+	\begin{align} &P_{\mu}=-i \partial_{\mu} \\ &M_{\mu \nu}=i\left(x_{\mu} \partial_{\nu}-x_{\nu} \partial_{\mu}\right) \\\ &D=-i x^{\mu} \partial_{\mu} \\ &K_{\mu}=-i\left(2 x_{\mu} x^{\nu} \partial_{\nu}-x^{2} \partial_{\mu}\right)  \end{align}
+
+这些生成元的对易关系，一部分就是Euclid群的Lie代数 (1.10) 和 (1.13) ，其余还有
+\begin{align} &\left[D, P_{\mu}\right]=i P_{\mu}\\ &\left[D, K_{\mu}\right]=-i K_{\mu} \\ &\left[K_{\mu}, P_{\nu}\right]=2 i\left(g_{\mu \nu} D-M_{\mu \nu}\right) \\ &\left[K_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} K_{\nu}-g_{\rho \nu} K_{\mu}\right) \\ &\left[P_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} P_{\nu}-g_{\rho \nu} P_{\mu}\right) 
+\end{align}
+这个Lie代数称为$ d $维共形代数。
+
+这个 $d$ 维共形代数可看作 $d+2 $维Lorentz代数 $\mathfrak{so}(1,d+1)$ 。事实上， $d$ 维共形代数的生成元（ $P_{\mu}, M_{\mu \nu}, D, K_{\mu} $）可重写成生成元 $J_{ab} (a,b=-1,0,\cdots,d )$的形式以看到Lorentz代数\footnote{这里与$(1.2)$不同，$\mu,\nu=1, \cdots, d$。}。这里，$ J_{ab}$ 定义为
+	\begin{align} &J_{\mu \nu}=M_{\mu \nu}\\ &J_{-1 \mu}=\frac{1}{2}\left(P_{\mu}-K_{\mu}\right) \\ &J_{-10}=D \\ &J_{0 \mu}=\frac{1}{2}\left(P_{\mu}+K_{\mu}\right)  \end{align}
+从共形代数的对易关系，可以得到 $J_{ab}$ 满足对易关系
+\begin{equation}
+	\left[J_{a b}, J_{c d}\right]=i\left(g_{a d} J_{b c}+g_{b c} J_{a d}-g_{a c} J_{b d}-g_{b d} J_{a c}\right)
+\end{equation}
+这里， $g_{ab} $是号差为 $(-,+, \cdots,+)$ 的Minkowski度规。
+
+我们计数这个代数中参数的个数，平移有 d 个，旋转有 $\frac{d(d-1)}{2} $个，标度变换有 1 个，特殊共形变换有 d 个，总共有
+\[d+\frac{d(d-1)}{2}+1+d=\frac{(d+1)(d+2)}{2}\]
+个，确实等于 $\mathfrak{so}(1,d+1) $的维数。
+
+\subsection{有限共形变换}
+
+所以有限共形变换是什么样的呢？无穷小平移和旋转，分别对应有限距离的平移，和我们讨论过的正交旋转。标度变换对应坐标乘上常数。至于特殊共形变换，不能从无穷小变换 (1.42) 的形式立刻看出来。这个变换是反演变换
+\begin{equation}
+		x^{\prime \mu}=\frac{x^{\mu}}{x^{2}}
+\end{equation}
+和平移变换的组合：
+\begin{equation}
+		x^{\mu} \rightarrow x^{\prime \mu}=\frac{x^{\mu}}{x^{2}} \rightarrow x^{\prime \prime \mu}=x^{\prime \mu}-b^{\mu} \rightarrow x^{\prime \prime \prime \mu}=\frac{x^{\prime \prime \mu}}{x^{\prime \prime 2}}
+\end{equation}
+总结一下，这个变换是
+\begin{equation}
+		x^{\prime \prime \prime \mu}=\frac{x^{\mu}-b^{\mu} x^{2}}{1-2 b x+b^{2} x^{2}}
+\end{equation}
+这里的无穷小参数代入 $b^{\mu}=-\frac{B^{\mu}}{4}$ ，展开就得到 (1.42) 。
+
+反演变换下，到原点距离的平方变为其倒数：
+\begin{equation}
+		x^{\prime 2}=\frac{1}{x^{2}}
+\end{equation}
+也就是说，这个变换将点移到关于单位球面 $x^{\mu} x_{\mu}=1$ 对称的位置。此外，度规变为
+\begin{equation}
+		g_{\mu \nu} d x^{\mu} d x^{\nu}=\frac{1}{\left(x^{\prime 2}\right)^{2}} g_{\mu \nu} d x^{\prime \mu} d x^{\prime \nu}
+\end{equation}
+
+因此这是共形变换。反演变换不包含连续的参数，因此称为离散的变换。这样的变换不能通过多次无穷小变换得到。总结一下，有限共形变换有
+\begin{itemize}
+	\item 平移
+	\begin{equation}
+		x^{\prime \mu}=x^{\mu}-a^{\mu}
+	\end{equation}	
+	\item 旋转
+	\begin{equation}
+		x^{\prime \mu}=\Lambda_{\nu}^{\mu} x^{\nu}
+	\end{equation}
+	\item 标度变换
+	\begin{equation}
+		x^{\prime \mu}=\alpha x^{\mu}
+	\end{equation}
+	\item 特殊共形变换
+	\begin{equation}
+		x^{\prime \mu}=\frac{x^{\mu}-b^{\mu} x^{2}}{1-2 b x+b^{2} x^{2}}
+	\end{equation}
+\end{itemize}
+
+这些变换构成的群是$ SO(1,d+1) $，是Lie代数 $\mathfrak{so}(1,d+1)$ 对应的Lie群。
+
+
+\section{二维共形变换}
+我们已经讨论了一般维数下共形变换的性质，这节着重讨论本书的主题，二维共形变换。考虑二维平直度规 $g_{\mu \nu}=\operatorname{diag}(+1,+1) $。二维坐标记作 $x^{\mu}=\left(x^{0}, x^{1}\right) $。坐标变换 $x^{\mu} \rightarrow x^{\prime \mu} $下，度规按 (1.3) 变换，共形变换的条件 (1.14) ，也就是$ g'^{00}=g'^{11}$ ，$ g'^{01}=g'^{10}=0 $，可写成
+\begin{align} & \left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)^{2}+\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)^{2}=\left(\frac{\partial x'^{1}}{\partial x^{0}}\right)^{2}+\left(\frac{\partial x^{\prime 1}}{\partial x^{1}}\right)^{2}\\ &\left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)\left(\frac{\partial x^{\prime 1}}{\partial x^{0}}\right)+\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)\left(\frac{\partial x^{\prime 1}}{\partial x^{1}}\right)=0 \end{align}
+
+如果Jacobian非零，它的至少一个分量非零。例如，如果 $\frac{\partial x^{\prime 0}}{\partial x^{0}} \neq 0 $，可以解出
+\[
+\left(\frac{\partial x^{\prime 1}}{\partial x^{0}}\right)=-\frac{1}{\left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)}\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)\left(\frac{\partial x'^{1}}{\partial x^{1}}\right)\]
+代入 (1.66) 得到
+$$
+\left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)^{2}+\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)^{2}=\frac{\left(\frac{\partial x^{\prime 1}}{\partial x^{1}}\right)^{2}}{\left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)^{2}}\left\{\left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)^{2}+\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)^{2}\right\}$$
+这意味着
+\begin{equation}
+		\left(\frac{\partial x^{\prime 1}}{\partial x^{1}}\right)=\pm\left(\frac{\partial x^{\prime 0}}{\partial x^{0}}\right)
+\end{equation}
+从 (1.67) 又可看到
+\begin{equation}
+	\left(\frac{\partial x^{\prime 1}}{\partial x^{0}}\right)=\mp\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)
+\end{equation}
+
+取上面的符号，这些式子就是Cauchy-Riemann关系，说明函数$ w=x^{\prime 0}+i x^{\prime 1}$ 是 $z=x^{0}+i x^{1} $的全纯函数。取下面的符号，说明 $w=x^{\prime 0}+i x^{\prime 1} $只是 $\bar{z}=x^{0}-i x^{1} $的函数（反全纯函数）。简单起见，以后取上面的符号。
+
+\subsection{复坐标}
+
+因此，讨论二维共形变换时，相比实坐标$ x^\mu$ ，用复坐标
+\begin{equation}
+	z=x^{0}+i x^{1}, \quad \bar{z}=x^{0}-i x^{1}
+\end{equation}
+更方便。 (1.70) 取逆得到
+\begin{equation}
+	x^{0}=\frac{1}{2}(z+\bar{z}), \quad x^{1}=\frac{1}{2 i}(z-\bar{z})
+\end{equation}
+对 $z,\bar{z}$ 的偏导定义为
+\begin{equation}
+	\partial_{z}=\frac{1}{2}\left(\partial_{0}-i \partial_{1}\right), \quad \partial_{\bar{z}}=\frac{1}{2 }\left(\partial_{0}+i \partial_{1}\right)
+\end{equation}
+取逆得到
+\begin{equation}
+	\partial_{0}=\partial_{z}+\partial_{\bar{z}}, \quad \partial_{1}=i\left(\partial_{z}-\partial_{\bar{z}}\right)
+\end{equation}
+
+也常用记号$ \partial\equiv\partial_z $， $\bar{\partial}\equiv\partial_{\bar{z}}$ 。
+
+共形变换可写成
+\begin{equation}
+	w=f(z), \quad \bar{w}=\bar{f}(\bar{z})
+\end{equation}
+
+Cauchy-Riemann关系，也就是$ f(z)$ 只依赖于$ z$ ：
+\begin{equation}
+	\partial_{\bar{z}} f(z)=\partial_{z} \bar{f}(\bar{z})=0
+\end{equation}
+
+$\frac{d f(z)}{d z} \neq 0$ 时，从 $z$ 到 $w $的映射是这样的共形变换： $\left|\frac{d f(z)}{d z}\right| $倍的标度变换加上 $\arg \frac{d f(z)}{d z} $角度的旋转。这样的映射也称为保角映射。
+
+用复坐标 $z,\bar{z} $表示的线元是
+$$
+d s^{2}=d z d \bar{z}
+$$
+因此，用复坐标表示的度规 $g_{\alpha\beta}( \alpha,\beta=z,\bar{z})$是
+\begin{equation}
+g_{z \bar{z}}=g_{\bar{z} z}=\frac{1}{2}, \quad g_{z z}=g_{\bar{z} \bar{z}}=0
+\end{equation}
+
+它的逆 $g^{\alpha\beta}$ 是
+\begin{equation}
+	g^{z \bar{z}}=g^{\bar{z} z}=2, \quad g^{z z}=g^{\bar{z} \bar{z}}=0
+\end{equation}
+
+\subsection{全局共形变换}
+
+考虑复函数时，在复平面中加上无穷远点（Riemann球面）会很方便。共形变换 (1.74) 表示从Riemann球面到自身的映射时，称为全局共形变换。如果只是在各点的邻域定义共形变换，而不关心无穷远点处的行为，称为局域共形变换。在场论中，区分局域和全局的变换至关重要。规范变换和广义坐标变换是局域变换的重要例子。
+
+全局共形变换由一次分式给出：
+\begin{equation}
+f(z)=\frac{a z+b}{c z+d}, \quad a d-b c=1
+\end{equation}
+这里， $a,b,c,d$ 是复常数。由它表示的变换例如
+\begin{itemize}
+	\item 平移变换（ $a=d=1 , c=0 $）
+	\[f(z)=z+b\]
+	\item 标度变换+旋转（$ b=c=0 , d=1/a $）
+	\[ f(z)=-1/z\]
+	\item 反演（ $a=d=0 , -b=c=1 $）
+\end{itemize}
+
+一次分式变换 $f_1(z) $，$ f_2(z)$ 复合起来，得到的 $f_2(f_1(z)) $同样是一次分式变换，于是可以看到全局共形变换全体构成群。
+
+变换 (1.78) 可对应矩阵
+\begin{equation}
+	A=\left(\begin{array}{ll} a & b \\ c & d \end{array}\right)
+\end{equation}
+
+将 $f_1,f_2$ 对应到矩阵 $A_1,A_2 $。 可以看到，$f_1,f_2 $复合成 $f_2(f_1(z)) $正对应矩阵 $A_2A_1 $。于是共形变换全体构成的群可看作 $SL(2,\mathbb{C})$ 。更准确地说， $A$ 的所有分量同时变号，得到的 $-A $仍然表示同一个一次分式变换，因此共形变换全体构成的群是 $PSL(2,\mathbb{C})=SL(2,\mathbb{C})/\mathbb{Z}_2$ 。这里， $\mathbb{Z}_2 $表示变换 $A\to -A $。
+
+\subsection{无穷小共形变换}
+考虑$ z=0$ 邻域内的无穷小共形变换
+\begin{equation}
+		z^{\prime}=z+\epsilon(z), \quad \bar{z}^{\prime}=\bar{z}+\bar{\epsilon}(\bar{z})
+\end{equation}
+在 $z=0 $处对 $\epsilon(z) $作Laurent展开：
+\begin{equation}
+	\epsilon(z)=\sum_{n=-\infty}^{\infty} \epsilon_{n} z^{n+1}
+\end{equation}
+$\epsilon_n$ 是无穷小参数。这个无穷小变换的生成元是
+\begin{equation}
+	-\epsilon(z) \partial_{z}, \quad-\bar{\epsilon}(\bar{z}) \partial_{\bar{z}}
+\end{equation}
+代入 $\epsilon(z)$ 的Laurent展开，得到无穷小参数$ \epsilon_n$ 对应变换的生成元：
+\begin{equation}
+	\ell_{n}=-z^{n+1} \partial_{z}, \quad \bar{\ell}_{n}=-\bar{z}^{n+1} \partial_{\bar{z}}
+\end{equation}
+对易关系是
+\begin{align} &\left[\ell_{n}, \ell_{m}\right]=(n-m) \ell_{n+m} \\ &\left[\bar{\ell}_{n}, \bar{\ell}_{m}\right]=(n-m) \bar{\ell}_{n+m} \\ &\left[\ell_{n}, \bar{\ell}_{m}\right]=0  \end{align}
+
+不像 $d\geq 3 $时限制成 (1.32) 的形式，二维的无穷小共形变换生成元有无穷多个。
+
+$\left\{\ell_{-1}, \ell_{0}, \ell_{1}\right\} ， \left\{\bar{\ell}_{-1}, \bar{\ell}_{0}, \bar{\ell}_{1}\right\}$ 这些子代数生成有限共形变换。具体来说是这样对应：
+\begin{itemize}
+	\item 平移
+	\[\ell_{-1}=-\partial_{z}, \bar{\ell}_{-1}=-\partial_{\bar{z}}\]
+	\item{标度变换+旋转}
+	\[\ell_{0}=-z \partial_{z}, \bar{\ell}_{0}=-\bar{z} \partial_{\bar{z}}\]
+	特别地， $\ell_{0}+\bar{\ell}_{0}$ 是标度变换， $i\left(\ell_{0}-\bar{\ell}_{0}\right)$ 是旋转变换。
+	\item 特殊共形变换
+	\[\ell_{1}=-z^{2} \partial_{z}, \bar{\ell}_{1}=-\bar{z}^{2} \partial_{\bar{z}}
+	\]
+\end{itemize}
+
+于是我们知道，二维共形变换对应无穷维代数。这个结构在量子理论中会有变化，我们将看到，它对二维共形不变场论的结构给出了很强的限制。下一章讨论共形不变性在场论中扮演的角色。
+
+
