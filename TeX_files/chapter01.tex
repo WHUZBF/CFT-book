@@ -11,7 +11,7 @@
 \begin{equation}
 	d s^{2}=g_{\mu \nu} d x^{\mu} d x^{\nu}=\left(d x^{0}\right)^{2}+\cdots+\left(d x^{d-1}\right)^{2}
 \end{equation}
-坐标变换 $x^\mu \to x'^\mu $下，度规变为
+坐标变换 $x^\mu \to x'^\mu $下，度规变为\footnote{[注意左边度规在$x'$处取值，右边在$x$处取值，从流形上讲就是在$\mathcal{M}$上的同一点$p$处取值。]}
 \begin{equation}
 		g_{\mu \nu} \rightarrow g_{\mu \nu}^{\prime}=\frac{\partial x^{\rho}}{\partial x^{\prime \mu}} \frac{\partial x^{\sigma}}{\partial x^{\prime \nu}} g_{\rho \sigma}
 \end{equation}
@@ -19,7 +19,7 @@
 \begin{equation}
 	x^{\mu} \rightarrow x^{\prime \mu}=\Lambda^{\mu} {}_{\nu}x^{\nu}
 \end{equation}
-称为正交变换。这时， $d\times d $矩阵 $\Lambda^\mu{}_\rho $满足
+称为\textbf{正交变换}。这时， $d\times d $矩阵 $\Lambda^\mu{}_\rho $满足
 \begin{equation}
 	g_{\mu\nu}\Lambda^\mu{}_\rho \Lambda^\nu{}_\sigma=g_{\rho\sigma}
 \end{equation}
@@ -28,7 +28,7 @@
 \begin{equation}
 	\cos \theta=\frac{x y}{\left(x^{2}\right)^{\frac{1}{2}}\left(y^{2}\right)^{\frac{1}{2}}}
 \end{equation}
-也不变。正交变换全体构成群，称为正交群，写作 $O(d) $。无穷小变换生成的子群称为特殊正交群，写作 $SO(d)$ 。
+也不变。正交变换全体构成群，称为\textbf{正交群}，写作 $O(d) $。无穷小变换生成的子群称为\textbf{特殊正交群}，写作 $SO(d)$ 。
 
 考虑无穷小正交变换
 \begin{equation}
@@ -60,13 +60,13 @@ x^{\prime \mu}=x^{\mu}+\epsilon^{\mu}{}_{\nu} x^{\nu}, \quad \Lambda^{\mu}{}_{\n
 \begin{equation}
 	\begin{array}{l} {\left[P^{\mu}, M^{\rho \sigma}\right]=i\left(g^{\mu \rho} P^{\sigma}-g^{\mu \sigma} P^{\rho}\right)} \\ {\left[P^{\mu}, P^{\nu}\right]=0} \end{array}
 \end{equation}
-正交变换和平移变换构成的群称为Euclid群。
+正交变换和平移变换构成的群称为\textbf{Euclid群}。
 
-如果 $d $维时空度规 $g_{\mu\nu} $，是Euclid空间的度规 (1.1) 中 $p $个系数换成负的，称为 $(p,q) $型不定度规（ $q=d-p $）。这时保度规线性变换全体构成的群记作 $O(p,q)$ 。特别地，$ O(1,3)$ 称为Lorentz群，Lorentz变换和平移变换构成的群称为Poincaré群。
+如果 $d $维时空度规 $g_{\mu\nu} $，是Euclid空间的度规 (1.1) 中 $p $个系数换成负的，称为\textbf{ $(p,q) $型不定度规}（ $q=d-p $）。这时保度规线性变换全体构成的群记作 $O(p,q)$ 。特别地，$ O(1,3)$ 称为\textbf{Lorentz群}，Lorentz变换和平移变换构成的群称为\textbf{Poincaré群}。
 
 \section{共形变换}
 
-$d $维Euclid变换不改变度规。考虑推广它，以容许使度规 $g_{\mu\nu}$ 乘上一标度因子的坐标变换 $x^{\mu} \rightarrow x^{\prime \mu} $。这样的变换称为共形变换。共形变换下度规变为
+$d $维Euclid变换不改变度规。考虑推广它，以容许使度规 $g_{\mu\nu}$ 乘上一标度因子的坐标变换 $x^{\mu} \rightarrow x^{\prime \mu} $。这样的变换称为\textbf{共形变换}。共形变换下度规变为
 \begin{equation}
 	g_{\mu \nu} \rightarrow g_{\mu \nu}^{\prime}\left(x^{\prime}\right)=\Omega^{2}(x) g_{\mu \nu}
 \end{equation}
@@ -76,7 +76,7 @@ $d $维Euclid变换不改变度规。考虑推广它，以容许使度规 $g_{\m
 
 \subsection{无穷小变换}
 
-我们来求 d 维Euclid空间中的无穷小共形变换。首先，考虑无穷小变换
+我们来求 $d$ 维Euclid空间中的无穷小共形变换。首先，考虑无穷小变换
 \begin{equation}
 	x^{\mu} \rightarrow x^{\prime \mu}=x^{\mu}-\epsilon^{\mu}(x)
 \end{equation}
@@ -200,7 +200,7 @@ $d=2$ 时只需满足 (1.28) 。
 这些生成元的对易关系，一部分就是Euclid群的Lie代数 (1.10) 和 (1.13) ，其余还有
 \begin{align} &\left[D, P_{\mu}\right]=i P_{\mu}\\ &\left[D, K_{\mu}\right]=-i K_{\mu} \\ &\left[K_{\mu}, P_{\nu}\right]=2 i\left(g_{\mu \nu} D-M_{\mu \nu}\right) \\ &\left[K_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} K_{\nu}-g_{\rho \nu} K_{\mu}\right) \\ &\left[P_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} P_{\nu}-g_{\rho \nu} P_{\mu}\right) 
 \end{align}
-这个Lie代数称为$ d $维共形代数。
+这个Lie代数称为\textbf{$ d $维共形代数}。
 
 这个 $d$ 维共形代数可看作 $d+2 $维Lorentz代数 $\mathfrak{so}(1,d+1)$ 。事实上， $d$ 维共形代数的生成元（ $P_{\mu}, M_{\mu \nu}, D, K_{\mu} $）可重写成生成元 $J_{ab} (a,b=-1,0,\cdots,d )$的形式以看到Lorentz代数\footnote{这里与$(1.2)$不同，$\mu,\nu=1, \cdots, d$。}。这里，$ J_{ab}$ 定义为
 	\begin{align} &J_{\mu \nu}=M_{\mu \nu}\\ &J_{-1 \mu}=\frac{1}{2}\left(P_{\mu}-K_{\mu}\right) \\ &J_{-10}=D \\ &J_{0 \mu}=\frac{1}{2}\left(P_{\mu}+K_{\mu}\right)  \end{align}
@@ -281,7 +281,7 @@ $$
 	\left(\frac{\partial x^{\prime 1}}{\partial x^{0}}\right)=\mp\left(\frac{\partial x^{\prime 0}}{\partial x^{1}}\right)
 \end{equation}
 
-取上面的符号，这些式子就是Cauchy-Riemann关系，说明函数$ w=x^{\prime 0}+i x^{\prime 1}$ 是 $z=x^{0}+i x^{1} $的全纯函数。取下面的符号，说明 $w=x^{\prime 0}+i x^{\prime 1} $只是 $\bar{z}=x^{0}-i x^{1} $的函数（反全纯函数）。简单起见，以后取上面的符号。
+取上面的符号，这些式子就是Cauchy-Riemann关系，说明函数$ w=x^{\prime 0}+i x^{\prime 1}$ 是 $z=x^{0}+i x^{1} $的全纯函数\footnote{[即解析函数]}。取下面的符号，说明 $w=x^{\prime 0}+i x^{\prime 1} $只是 $\bar{z}=x^{0}-i x^{1} $的函数（反全纯函数）。简单起见，以后取上面的符号。
 
 \subsection{复坐标}
 
@@ -301,20 +301,18 @@ $$
 \begin{equation}
 	\partial_{0}=\partial_{z}+\partial_{\bar{z}}, \quad \partial_{1}=i\left(\partial_{z}-\partial_{\bar{z}}\right)
 \end{equation}
-
 也常用记号$ \partial\equiv\partial_z $， $\bar{\partial}\equiv\partial_{\bar{z}}$ 。
 
 共形变换可写成
 \begin{equation}
 	w=f(z), \quad \bar{w}=\bar{f}(\bar{z})
 \end{equation}
-
 Cauchy-Riemann关系，也就是$ f(z)$ 只依赖于$ z$ ：
 \begin{equation}
 	\partial_{\bar{z}} f(z)=\partial_{z} \bar{f}(\bar{z})=0
 \end{equation}
 
-$\frac{d f(z)}{d z} \neq 0$ 时，从 $z$ 到 $w $的映射是这样的共形变换： $\left|\frac{d f(z)}{d z}\right| $倍的标度变换加上 $\arg \frac{d f(z)}{d z} $角度的旋转。这样的映射也称为保角映射。
+$\frac{d f(z)}{d z} \neq 0$ 时，从 $z$ 到 $w $的映射是这样的共形变换： $\left|\frac{d f(z)}{d z}\right| $倍的标度变换加上 $\arg \frac{d f(z)}{d z} $角度的旋转。这样的映射也称为\textbf{保角映射}。
 
 用复坐标 $z,\bar{z} $表示的线元是
 $$
@@ -332,19 +330,20 @@ g_{z \bar{z}}=g_{\bar{z} z}=\frac{1}{2}, \quad g_{z z}=g_{\bar{z} \bar{z}}=0
 
 \subsection{全局共形变换}
 
-考虑复函数时，在复平面中加上无穷远点（Riemann球面）会很方便。共形变换 (1.74) 表示从Riemann球面到自身的映射时，称为全局共形变换。如果只是在各点的邻域定义共形变换，而不关心无穷远点处的行为，称为局域共形变换。在场论中，区分局域和全局的变换至关重要。规范变换和广义坐标变换是局域变换的重要例子。
+考虑复函数时，在复平面中加上无穷远点（Riemann球面）会很方便。共形变换 (1.74) 表示从Riemann球面到自身的映射时，称为\textbf{全局共形变换}。如果只是在各点的邻域定义共形变换，而不关心无穷远点处的行为，称为\textbf{局域共形变换}。在场论中，区分局域和全局的变换至关重要。规范变换和广义坐标变换是局域变换的重要例子。
 
 全局共形变换由一次分式给出：
 \begin{equation}
 f(z)=\frac{a z+b}{c z+d}, \quad a d-b c=1
 \end{equation}
-这里， $a,b,c,d$ 是复常数。由它表示的变换例如
+这里， $a,b,c,d$ 是\uwave{复常数}。由它表示的变换例如
 \begin{itemize}
 	\item 平移变换（ $a=d=1 , c=0 $）
 	\[f(z)=z+b\]
 	\item 标度变换+旋转（$ b=c=0 , d=1/a $）
+	\[ f(z)=a^2 z\]
+	\item 反演\footnote{[与(1.57)对应的是$1/\bar z$]}（ $a=d=0 , -b=c=1 $）
 	\[ f(z)=-1/z\]
-	\item 反演（ $a=d=0 , -b=c=1 $）
 \end{itemize}
 
 一次分式变换 $f_1(z) $，$ f_2(z)$ 复合起来，得到的 $f_2(f_1(z)) $同样是一次分式变换，于是可以看到全局共形变换全体构成群。
@@ -376,9 +375,7 @@ $\epsilon_n$ 是无穷小参数。这个无穷小变换的生成元是
 对易关系是
 \begin{align} &\left[\ell_{n}, \ell_{m}\right]=(n-m) \ell_{n+m} \\ &\left[\bar{\ell}_{n}, \bar{\ell}_{m}\right]=(n-m) \bar{\ell}_{n+m} \\ &\left[\ell_{n}, \bar{\ell}_{m}\right]=0  \end{align}
 
-不像 $d\geq 3 $时限制成 (1.32) 的形式，二维的无穷小共形变换生成元有无穷多个。
-
-$\left\{\ell_{-1}, \ell_{0}, \ell_{1}\right\} ， \left\{\bar{\ell}_{-1}, \bar{\ell}_{0}, \bar{\ell}_{1}\right\}$ 这些子代数生成有限共形变换。具体来说是这样对应：
+不像 $d\geq 3 $时限制成 (1.32) 的形式，二维的无穷小共形变换生成元有无穷多个。$\left\{\ell_{-1}, \ell_{0}, \ell_{1}\right\} ， \left\{\bar{\ell}_{-1}, \bar{\ell}_{0}, \bar{\ell}_{1}\right\}$ 这些子代数生成有限共形变换。具体来说是这样对应：
 \begin{itemize}
 	\item 平移
 	\[\ell_{-1}=-\partial_{z}, \bar{\ell}_{-1}=-\partial_{\bar{z}}\]
