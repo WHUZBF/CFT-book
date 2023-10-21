@@ -16,7 +16,7 @@
 
 从Lorentz变换 $\Lambda $到 $N\times N $矩阵 $D(\Lambda) $的映射： $\Lambda \mapsto D(\Lambda)$ ，是Lorentz群的 N 维表示。也就是说，
 
-对恒等元 $1$ ，有 $D(1)=1_N $（ 1$1_N $是$ N$ 阶恒等矩阵）；
+对恒等元 $1$ ，有 $D(1)=1_N $（ $1_N $是$ N$ 阶恒等矩阵）；
 对Lorentz变换的复合 $\Lambda_3=\Lambda_2\Lambda_1$ ，有
 \begin{equation}
 	D\left(\Lambda_{3}\right)=D\left(\Lambda_{2}\right) D\left(\Lambda_{1}\right)
@@ -61,9 +61,9 @@ $N$ 阶矩阵$ S_{\mu \nu}$ 满足Lorentz代数的对易关系。
 这里，$ \Delta$ ， $\kappa_\mu$ 是$ N $阶矩阵，满足对易关系
 \begin{align} &\left[\Delta, S_{\mu \nu}\right]=0 \\ &\left[\Delta, \kappa_{\mu}\right]=\kappa_{\mu} \\ &\left[\kappa_{\mu}, \kappa_{\nu}\right]=0\\ &\left[\kappa_{\rho}, S_{\mu \nu}\right]=i\left( \eta_{\rho \mu} \kappa_{\nu}-\eta_{\rho \nu} \kappa_{\mu}\right) \\ &\left[S_{\mu \nu}, S_{\rho \sigma}\right]=i\left(\eta_{\nu \rho} S_{\mu \sigma}+\eta_{\mu \sigma} S_{\nu \rho}-\eta_{\mu \rho} S_{\nu \sigma}-\eta_{\nu \sigma} S_{\mu \rho}\right) \end{align}
 
-如果$ \phi(x)$ 属于Lorentz群的不可约表示，那么所有与 $S_{\mu\nu} $对易的生成元正比于恒等矩阵。于是$ \Delta$ 正比于恒等矩阵，系数仍记作 $\Delta $。从而，由对易关系 (2.16) ，有 $\kappa_\mu=0 $。因此，在共形不变的场论中，基本的场除由Lorentz群的表示分类以外，还由标度变换表示中的参数 $\Delta$ 分类。$ \Delta$ 称为场 $\phi $的共形维数。
+如果$ \phi(x)$ 属于Lorentz群的不可约表示，那么所有与 $S_{\mu\nu} $对易的生成元正比于恒等矩阵。于是$ \Delta$ 正比于恒等矩阵，系数仍记作 $\Delta $。从而，由对易关系 (2.16) ，有 $\kappa_\mu=0 $。因此，在共形不变的场论中，基本的场除由Lorentz群的表示分类以外，还由标度变换表示中的参数 $\Delta$ 分类。$ \Delta$ 称为场 $\phi $的\textbf{共形维数}。
 
-如果$ \phi(x)$ 是标量场， $S_{\mu\nu}=0$ 。有限的共形变换 $x\to x^\prime$ 下，标量场变为
+如果$ \phi(x)$ 是标量场， $S_{\mu\nu}=0$ ，有限的共形变换 $x\to x^\prime$ 下，标量场变为
 \begin{equation}
 		\phi^{\prime}\left(x^{\prime}\right)=\left|\frac{\partial x^{\prime}}{\partial x}\right|^{-\frac{\Delta}{d}} \phi(x)
 \end{equation}
@@ -121,11 +121,10 @@ $| \partial x^{\prime}/\partial x |$是共形变换的Jacobian。对Lorentz变�
 \begin{equation}
 	\frac{\partial \mathcal{L}}{\partial \phi}-\partial_{\mu}\left(\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)}\right)=0
 \end{equation}
-，作用量的变化 $\delta S$ 可改写成全微分形式：
+作用量的变化 $\delta S$ 可改写成全微分形式：
 \begin{equation}
 	\delta S=\int_{V} d^{d} x \partial_{\mu}\left\{\mathcal{L} \delta x^{\mu}+\frac{\partial \mathcal{L}}{\partial\left(\partial_{\mu} \phi\right)} \delta_{0} \phi\right\}
 \end{equation}
-
 现在将无穷小变换的参数换成 $\epsilon $：
 $$
 	\delta x^{\mu}=\frac{\delta x^{\mu}}{\delta \epsilon} \delta \epsilon, \quad \delta_{0} \phi=\frac{\delta_{0} \phi}{\delta \epsilon} \delta \epsilon
@@ -140,7 +139,7 @@ $$
 \end{equation}
 满足 $\partial^\mu j_\mu=0$ ， $j^0 $的$ d-1$ 维空间积分
 \begin{equation}
-	Q=\int d^{d-1} x j^{0}
+	Q=\int \mathrm{d}^{d-1} x j^{0}
 \end{equation}
 无关时间，也就是说，是守恒量。因此，如果作用量 (2.5) 在连续变换下不变，就存在守恒量，这称为\textbf{Noether定理}。
 
@@ -164,7 +163,7 @@ $T^{0\nu} $的空间积分
 \begin{equation}
 	P^{\nu}=\int d^{d-1} x T^{0 \nu}
 \end{equation}
-守恒。 $P^\mu$ 是代表场的能量和动量的 d 维向量。 $T_{\mu \nu} $称为能动张量。
+守恒。 $P^\mu$ 是代表场的能量和动量的$ d$ 维向量。 $T_{\mu \nu} $称为能动张量。
 
 在相对论场论中，还有对应Lorentz变换的守恒流。对无穷小Lorentz变换 $\delta x^{\mu}=\omega^{\mu \nu} x_{\nu}$ ，令 $\epsilon=\omega^{\rho \sigma} $，上标 $\rho,\sigma $固定。无穷小变换下场的变化 (2.8) 代入 (2.35) ，得到对应Lorentz变换的流
 \begin{equation}
@@ -214,9 +213,9 @@ $\phi(x) $具有质量的 $\Delta=(d-2)/2$ 次幂量纲。由 (2.39) ，能动�
 \begin{equation}
 		Z[J]=\int D \varphi e^{i S[\varphi]+i \int d^{d} x J(x) \varphi(x)}
 \end{equation}
-关于源 $J(x) $求泛函导数：
+关于源 $J(x) $求泛函导数：\footnote{[原书中应该漏掉了$i$]}
 \begin{equation}
-		\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right)\right)\right| 0\right\rangle=\left.\frac{1}{Z} \frac{\delta}{\delta J\left(x_{1}\right)} \cdots \frac{\delta}{\delta J\left(x_{N}\right)} Z[J]\right|_{J=0}
+		\left\langle 0\left|T\left(\varphi\left(x_{1}\right) \cdots \varphi\left(x_{N}\right)\right)\right| 0\right\rangle=\left.\frac{1}{Z} \frac{\delta}{i\delta J\left(x_{1}\right)} \cdots \frac{\delta}{i\delta J\left(x_{N}\right)} Z[J]\right|_{J=0}
 \end{equation}
 
 我们来计算质量为 $m$ 的自由标量场的关联函数。作用量是
@@ -262,7 +261,7 @@ $\partial^\mu \partial_\mu $是 $d $维Laplacian。这一方程的解可用极�
 \section{共形Ward恒等式}
 不同于自由场的情形，有相互作用时关联函数很难精确求出，需要用一些近似方法，例如微扰论。不过，如果理论具有高度的对称性，关联函数的形式是可以确定的。在共形不变的场论中，关联函数的形式在多大程度上是可以确定的呢？Polyakov\footnote{A. M. Polyakov, JETP Lett. 12 (1970) 381 [Pisma Zh. Eksp. Teor. Fiz. 12 (1970) 538].}研究过这个问题。简单起见，接下来略去关联函数中的编时记号。
 
-在有限共形变换 $x\to x' $下，按 (2.20) 变换的场称为准初级场\footnote{局域共形变换下这样变换则称为初级场（primary field），见第3章。}（quasi primary field）。令 $\phi_i(x) (i=1,\cdots,N )$是共形维数为$ \Delta_i$ 的准初级场，也就是说，在共形变换下变为
+在有限共形变换 $x\to x' $下，按 (2.20) 变换的场称为\textbf{准初级场}\footnote{局域共形变换下这样变换则称为\textbf{初级场（primary field）}，见第3章。}（quasi primary field）。令 $\phi_i(x) (i=1,\cdots,N )$是共形维数为$ \Delta_i$ 的准初级场，也就是说，在共形变换下变为
 \begin{equation}
 	\phi_{i}^{\prime}\left(x^{\prime}\right)=\left|\frac{\partial x^{\prime}}{\partial x}\right|^{-\frac{\Delta_{i}}{d}} \phi_{i}(x)
 \end{equation}
@@ -321,7 +320,7 @@ $\varphi $是用于定义 $\phi_i(x)$ 的基础的场。
 \begin{equation}
 	G^{(2)}(r)=\frac{r_{0}^{\Delta_{1}+\Delta_{2}} G^{(2)}\left(r_{0}\right)}{r^{\Delta_{1}+\Delta_{2}}}
 \end{equation}
-固定$ r_0$ ，我们得到两点函数形如
+固定$ r_0$ ，我们得到两点函数形如\footnote{[这里也可以根据Euler齐次函数定理得到微分方程$\frac{\mathrm{d}G^{(2)}}{\mathrm{d}r}r=-\left(\Delta_1+\Delta_2\right)G^{(2)}$从而得到下式。]}
 \begin{equation}
 	\left\langle\phi_{1}\left(x_{1}\right) \phi_{2}\left(x_{2}\right)\right\rangle=\frac{C_{12}}{\left|x_{1}-x_{2}\right|^{\Delta_{1}+\Delta_{2}}}
 \end{equation}
@@ -369,8 +368,8 @@ $C_{12} $是常数。特殊共形变换 (1.59) 下，Jacobian是 $|\partial x'/\
 \begin{equation}
 	G^{(3)}\left(r_{12}, r_{23}, r_{31}\right)=\sum_{a, b, c} \frac{C_{a b c}}{r_{12}^{a} r_{23}^{b} r_{31}^{c}}
 \end{equation}
-这里，幂次 $a,b,c $满足 $a+b+c=\Delta_{1}+\Delta_{2}+\Delta_{3} $。考\begin{equation}
-	虑特殊共形变换下的变换行为，各项要满足
+这里，幂次 $a,b,c $满足 $a+b+c=\Delta_{1}+\Delta_{2}+\Delta_{3} $。考虑特殊共形变换下的变换行为，各项要满足
+\begin{equation}
 \frac{C_{a b c}}{r_{12}^{a} r_{23}^{b} r_{31}^{c}}=\frac{1}{\gamma_{1}^{\Delta_{1}} \gamma_{2}^{\Delta_{2}} \gamma_{3}^{\Delta_{3}}} \frac{C_{a b c} \gamma_{1}^{\frac{a+c}{2}} \gamma_{2}^{\frac{a+b}{2}} \gamma_{3}^{\frac{b+c}{2}}}{r_{12}^{a} r_{23}^{b} r_{31}^{c}}
 \end{equation}\
 这里， $\gamma_{i}=1-2 b x_{i}+b^{2} x_{i}^{2} $。由此，幂次 $a,b,c $满足
