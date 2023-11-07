@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  21 OCT 2023 21:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  7 NOV 2023 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,17 +1087,7 @@ Missing character: There is no 形 (U+5F62) in font [lmroman12-regular]:mapping=
 ex-text;!
 Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
 ex-text;!
-Missing character: There is no ， (U+FF0C) in font [lmroman12-regular]:mapping=t
-ex-text;!
  [30]
-Missing character: There is no 。 (U+3002) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 初 (U+521D) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 级 (U+7EA7) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 场 (U+573A) in font [lmroman12-regular]:mapping=t
-ex-text;!
 File: fig/3.1.png Graphic file (type bmp)
 <fig/3.1.png>
 
@@ -1114,29 +1104,20 @@ File: fig/3.3.png Graphic file (type bmp)
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 297.
+(amsmath)                 on input line 292.
 
 File: fig/3.4.png Graphic file (type bmp)
 <fig/3.4.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Missing character: There is no 含 (U+542B) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 的 (U+7684) in font [lmroman12-regular]:mapping=t
-ex-text;!
-Missing character: There is no 项 (U+9879) in font [lmroman12-regular]:mapping=t
-ex-text;!
 [35] [36] [37]
 Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
 ex-text;!
- [38] [39] [40] [41] [42]
+ [38] [39] [40] [41] [42] [43]
 Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
 ex-text;!
- [43] [44] [45] [46]
-Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
-ex-text;!
- [47] [48]
+ [44] [45] [46] [47] [48]
 
 Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
 (fontspec)             doesn't exist).
@@ -1160,72 +1141,72 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- [49])
-[50]
+ [49]
+[50]) [51]
 \openout2 = `./TeX_files/chapter04.aux'.
 
- (./TeX_files/chapter04.tex
-第四章
-[51
+ (./TeX_files/chapter04.tex [52
 
 
 
 
 ]
+第四章
+[53]
 Missing character: There is no 与 (U+4E0E) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no 左 (U+5DE6) in font [lmroman12-regular]:mapping=t
 ex-text;!
 Missing character: There is no 模 (U+6A21) in font [lmroman12-regular]:mapping=t
 ex-text;!
- [52] [53] [54]
+ [54] [55] [56]
 File: fig/4.1.png Graphic file (type bmp)
 <fig/4.1.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[55] [56] [57] [58] [59] [60]) [61]
+[57] [58] [59] [60] [61] [62]) [63]
 \openout2 = `./TeX_files/chapter05.aux'.
 
- (./TeX_files/chapter05.tex [62
+ (./TeX_files/chapter05.tex [64
 
 
 
 
 ]
 第五章
-[63] [64] [65] [66] [67] [68] [69] [70] [71] [72]
+[65] [66] [67] [68] [69] [70] [71] [72] [73] [74]
 File: fig/5.1.png Graphic file (type bmp)
 <fig/5.1.png>
- [73]
+ [75]
 Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
 ex-text;!
- [74]
+ [76]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[75] [76]
+[77] [78]
 File: fig/5.2notag.png Graphic file (type bmp)
 <fig/5.2notag.png>
- [77] [78]
+ [79] [80]
 File: fig/5.2.png Graphic file (type bmp)
 <fig/5.2.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[79]
+[81]
 File: fig/5.3.png Graphic file (type bmp)
 <fig/5.3.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[80] [81] [82] [83] [84] [85] [86]
+[82] [83] [84] [85] [86] [87] [88]
 Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
 ex-text;!
- [87] [88] [89]
+ [89] [90] [91]
 Missing character: There is no 和 (U+548C) in font [lmroman12-regular]:mapping=t
 ex-text;!
 
@@ -1235,13 +1216,13 @@ SimSun(0)/m/n/12 的 初 级 场 $\OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 (\OML/cm
 12 z\OT1/cmr/m/n/12 )$ \TU/SimSun(0)/m/n/12 的 四 点 函 数 $[]$，|
  []
 
-[90] [91]
+[92] [93]
 File: fig/5.4.png Graphic file (type bmp)
 <fig/5.4.png>
-) [92] [93]
+) [94] [95]
 \openout2 = `./TeX_files/chapter06.aux'.
 
- (./TeX_files/chapter06.tex [94
+ (./TeX_files/chapter06.tex [96
 
 
 
@@ -1250,29 +1231,29 @@ File: fig/5.4.png Graphic file (type bmp)
 第六章
 File: fig/6.1.png Graphic file (type bmp)
 <fig/6.1.png>
-[95] [96]
+[97] [98]
 File: fig/6.2.png Graphic file (type bmp)
 <fig/6.2.png>
 File: fig/6.3.png Graphic file (type bmp)
 <fig/6.3.png>
- [97] [98] [99] [100]
+ [99] [100] [101] [102]
 Missing character: There is no ・ (U+30FB) in font SimSun/OT:script=hani;languag
 e=dflt;!
- [101]
+ [103]
 Underfull \vbox (badness 5637) has occurred while \output is active []
 
- [102]
+ [104]
 Missing character: There is no ・ (U+30FB) in font SimSun/OT:script=hani;languag
 e=dflt;!
 
-[103] [104]
+[105] [106]
 File: fig/6.5.png Graphic file (type bmp)
 <fig/6.5.png>
- [105]
+ [107]
 Missing character: There is no 令 (U+4EE4) in font [lmroman12-regular]:mapping=t
 ex-text;!
- [106] [107] [108] [109] [110] [111] [112] [113] [114]
-[115] [116] [117]) [118]
+ [108] [109] [110] [111] [112] [113] [114] [115] [116]
+[117] [118] [119]) [120]
 \openout2 = `./TeX_files/chapter07.aux'.
 
  (./TeX_files/chapter07.tex
@@ -1282,29 +1263,29 @@ File: fig/7.1.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[119
+[121
 
 
 
 
-] [120] [121]
+] [122] [123]
 File: fig/7.2.png Graphic file (type bmp)
 <fig/7.2.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[122] [123] [124]
+[124] [125] [126]
 File: fig/7.3.png Graphic file (type bmp)
 <fig/7.3.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[125]
+[127]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126]
+ [128]
 Missing character: There is no 场 (U+573A) in font [lmroman12-regular]:mapping=t
 ex-text;!
 File: fig/7.4.png Graphic file (type bmp)
@@ -1313,21 +1294,21 @@ File: fig/7.4.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[127]
+[129]
 File: fig/7.5.png Graphic file (type bmp)
 <fig/7.5.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[128] [129] [130] [131]
+[130] [131] [132] [133]
 File: fig/7.6.png Graphic file (type bmp)
 <fig/7.6.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [132] [133] [134
+) [134] [135] [136
 
 
 
@@ -1337,15 +1318,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (./TeX_files/chapter05.aux) (./TeX_files/chapter06.aux)
 (./TeX_files/chapter07.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 27BB35D2D3C4F39C19264F85F0FF15A5;7933.
+(rerunfilecheck)             Checksum: 73B02E5BD76A7C5BF9F714AC1622BB39;7940.
  ) 
 Here is how much of TeX's memory you used:
- 28784 strings out of 476533
- 633838 string characters out of 5818886
- 945483 words of memory out of 5000000
- 48559 multiletter control sequences out of 15000+600000
+ 28796 strings out of 476533
+ 634096 string characters out of 5818886
+ 945764 words of memory out of 5000000
+ 48571 multiletter control sequences out of 15000+600000
  417975 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,21n,106p,1133b,1028s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (140 pages).
+Output written on main.pdf (142 pages).

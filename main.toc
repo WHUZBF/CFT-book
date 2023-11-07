@@ -10,13 +10,13 @@
 \contentsline {subsection}{\numberline {1.3.3}无穷小共形变换}{13}{subsection.1.3.3}%
 \contentsline {chapter}{\numberline {第二章\hspace {.3em}}场和共形不变性}{15}{chapter.2}%
 \contentsline {section}{\numberline {2.1}作用量和守恒量}{15}{section.2.1}%
-\contentsline {section}{\numberline {2.2}场的共形变换}{15}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}共形变换和守恒量}{18}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}路径积分和关联函数}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}共形Ward恒等式}{22}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}两点函数}{23}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}三点函数}{24}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}四点函数}{25}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.1.1}场的共形变换}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}共形变换和守恒量}{18}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}路径积分和关联函数}{20}{section.2.2}%
+\contentsline {section}{\numberline {2.3}共形Ward恒等式}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}两点函数}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}三点函数}{24}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}四点函数}{25}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {第三章\hspace {.3em}}二维共形不变性}{27}{chapter.3}%
 \contentsline {section}{\numberline {3.1}初级场}{27}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}准初级场}{27}{subsection.3.1.1}%
@@ -26,48 +26,48 @@
 \contentsline {section}{\numberline {3.3}算符乘积和对易关系}{34}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Virasoro代数}{36}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}中心荷}{36}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2} Virasoro代数}{37}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2} Virasoro代数}{38}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}CFT的Hilbert空间}{39}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}BPZ共轭}{40}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}自由标量场}{42}{section.3.5}%
 \contentsline {section}{\numberline {3.6}复合算符间的OPE}{44}{section.3.6}%
 \contentsline {section}{\numberline {3.7}顶点算符}{46}{section.3.7}%
-\contentsline {section}{\numberline {3.8}自由费米子}{47}{section.3.8}%
-\contentsline {chapter}{\numberline {第四章\hspace {.3em}}Virasoro代数的表示和关联函数}{51}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Virasoro代数的表示}{51}{section.4.1}%
-\contentsline {section}{\numberline {4.2}次级场}{52}{section.4.2}%
-\contentsline {section}{\numberline {4.3}OPE的自举}{56}{section.4.3}%
-\contentsline {section}{\numberline {4.4}交叉对称性}{59}{section.4.4}%
-\contentsline {chapter}{\numberline {第五章\hspace {.3em}}极小模型}{63}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Virasoro代数的退化表示}{63}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}零模向量的组成}{64}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}零模场的关联函数}{67}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}四点函数}{68}{subsection.5.2.1}%
-\contentsline {section}{\numberline {5.3}融合规则}{70}{section.5.3}%
-\contentsline {section}{\numberline {5.4}极小模型}{73}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Kac行列式和酉性}{77}{section.5.5}%
-\contentsline {section}{\numberline {5.6}共形块和单值变换不变性}{80}{section.5.6}%
-\contentsline {section}{\numberline {5.7}四点函数和OPE系数}{85}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Kac谱和自由场}{88}{section.5.8}%
-\contentsline {section}{\numberline {5.9}关联函数的自由场表示}{90}{section.5.9}%
-\contentsline {chapter}{\numberline {第六章\hspace {.3em}}环面上的极小模型}{95}{chapter.6}%
-\contentsline {section}{\numberline {6.1}圆柱上的CFT}{95}{section.6.1}%
-\contentsline {section}{\numberline {6.2}环面上的CFT}{97}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}配分函数}{97}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Virasoro代数的特征标}{98}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}极小模型的特征标}{99}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}theta函数}{101}{subsection.6.2.4}%
-\contentsline {section}{\numberline {6.3}配分函数的模不变性}{105}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1} 环面的模变换}{105}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2} Poisson公式}{106}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}theta函数的模变换}{107}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Virasoro特征标的模变换}{110}{subsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.3.5}ADE分类}{114}{subsection.6.3.5}%
-\contentsline {section}{\numberline {6.4}模不变性的应用}{115}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Verlinde公式}{117}{section.6.5}%
-\contentsline {chapter}{\numberline {第七章\hspace {.3em}}边界共形场论}{119}{chapter.7}%
-\contentsline {section}{\numberline {7.1} 两点函数}{119}{section.7.1}%
-\contentsline {section}{\numberline {7.2}加倍技巧}{122}{section.7.2}%
-\contentsline {section}{\numberline {7.3}边界算符}{125}{section.7.3}%
-\contentsline {section}{\numberline {7.4}边界态}{127}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}BCFT和Verlinde公式}{132}{subsection.7.4.1}%
+\contentsline {section}{\numberline {3.8}自由费米子}{48}{section.3.8}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}Virasoro代数的表示和关联函数}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Virasoro代数的表示}{53}{section.4.1}%
+\contentsline {section}{\numberline {4.2}次级场}{54}{section.4.2}%
+\contentsline {section}{\numberline {4.3}OPE的自举}{58}{section.4.3}%
+\contentsline {section}{\numberline {4.4}交叉对称性}{61}{section.4.4}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}极小模型}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Virasoro代数的退化表示}{65}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}零模向量的组成}{66}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}零模场的关联函数}{69}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}四点函数}{70}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}融合规则}{72}{section.5.3}%
+\contentsline {section}{\numberline {5.4}极小模型}{75}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Kac行列式和酉性}{79}{section.5.5}%
+\contentsline {section}{\numberline {5.6}共形块和单值变换不变性}{82}{section.5.6}%
+\contentsline {section}{\numberline {5.7}四点函数和OPE系数}{87}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Kac谱和自由场}{90}{section.5.8}%
+\contentsline {section}{\numberline {5.9}关联函数的自由场表示}{92}{section.5.9}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}环面上的极小模型}{97}{chapter.6}%
+\contentsline {section}{\numberline {6.1}圆柱上的CFT}{97}{section.6.1}%
+\contentsline {section}{\numberline {6.2}环面上的CFT}{99}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}配分函数}{99}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Virasoro代数的特征标}{100}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}极小模型的特征标}{101}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}theta函数}{103}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}配分函数的模不变性}{107}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1} 环面的模变换}{107}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2} Poisson公式}{108}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}theta函数的模变换}{109}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Virasoro特征标的模变换}{112}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}ADE分类}{116}{subsection.6.3.5}%
+\contentsline {section}{\numberline {6.4}模不变性的应用}{117}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Verlinde公式}{119}{section.6.5}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}边界共形场论}{121}{chapter.7}%
+\contentsline {section}{\numberline {7.1} 两点函数}{121}{section.7.1}%
+\contentsline {section}{\numberline {7.2}加倍技巧}{124}{section.7.2}%
+\contentsline {section}{\numberline {7.3}边界算符}{127}{section.7.3}%
+\contentsline {section}{\numberline {7.4}边界态}{129}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}BCFT和Verlinde公式}{134}{subsection.7.4.1}%

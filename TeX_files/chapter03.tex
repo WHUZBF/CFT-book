@@ -1,6 +1,6 @@
 \chapter{二维共形不变性}
 
-之前，我们关注全局的共形不变性，看到了 d 维时空中场论的关联函数是如何被限制的。从现在起，我将详细解释本书的主题，二维共形场论。首先来解释二维共形场论特有的无穷维共形代数，关联函数满足的共形Ward恒等式，以及在共形场论中发挥巨大作用的算符乘积展开（OPE），这些共形场论的基本工具。
+之前，我们关注全局的共形不变性，看到了 $d$ 维时空中场论的关联函数是如何被限制的。从现在起，我将详细解释本书的主题，二维共形场论。首先来解释二维共形场论特有的无穷维共形代数，关联函数满足的共形Ward恒等式，以及在共形场论中发挥巨大作用的算符乘积展开（OPE），这些共形场论的基本工具。
 
 \section{初级场}
 \subsection{准初级场}
@@ -12,7 +12,7 @@ z \rightarrow z^{\prime}=\frac{a z+b}{c z+d}, \quad \bar{z} \rightarrow \bar{z}^
 \begin{equation}
 		\phi^{\prime}\left(z^{\prime}, \bar{z}^{\prime}\right)=\left(\frac{d z^{\prime}}{d z}\right)^{-h}\left(\frac{d \bar{z}^{\prime}}{d \bar{z}}\right)^{-\bar{h}} \phi(z, \bar{z})
 \end{equation}
-，称为共形权是$ (h,\bar{h}) $的准初级场。 $h=\bar{h} $时，变换 (3.2) 同上章共形维数是$ \Delta=h+\bar{h}$ 的准初级场定义中的一样。$ h\neq \bar{h}$ 时，二维旋转
+称为\textbf{共形权是$ (h,\bar{h}) $的准初级场}。 $h=\bar{h} $时，变换 (3.2) 同上章共形维数是$ \Delta=h+\bar{h}$ 的准初级场定义中的一样。$ h\neq \bar{h}$ 时，二维旋转
 \[
 z^{\prime}=e^{i \theta} z, \quad \bar{z}^{\prime}=e^{-i \theta} \bar{z}
 \]
@@ -20,7 +20,7 @@ z^{\prime}=e^{i \theta} z, \quad \bar{z}^{\prime}=e^{-i \theta} \bar{z}
 \[
 \phi^{\prime}\left(z^{\prime}, \bar{z}^{\prime}\right)=e^{-i \theta(h-\bar{h})} \phi(z, \bar{z})
 \]
-因此，差 $s=h-\bar{h}$ 表示自旋。
+因此，差 $s=h-\bar{h}$ 表示\textbf{自旋}。
 
 考虑共形权是 $(h_i,\bar{h}_i)$ 的准初级场$ \phi_i(z_i,\bar{z}_i) $（ $i=1,\cdots,n $）的关联函数 $\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \cdots \phi_{n}\left(z_{n}, \bar{z}_{n}\right)\right\rangle $。全局共形变换 (3.1) 下，关联函数 $\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \cdots \phi_{n}\left(z_{n}, \bar{z}_{n}\right)\right\rangle$ 满足 (2.65) 的推广：
 \begin{equation}
@@ -30,7 +30,7 @@ z^{\prime}=e^{i \theta} z, \quad \bar{z}^{\prime}=e^{-i \theta} \bar{z}
 
 \subsection{无穷小共形变换}
 
-第1章讨论过，二维局域共形变换有无穷多个生成元。具有这一局域共形不变性的场论，称为共形场论（CFT）。共形场论最简单的例子，是无质量自由标量场和自由费米场。这些场是无相互作用的“自由”场， $N $点关联函数可由Wick定理计算。有相互作用的情形，从作用量根据Feynman规则微扰地计算关联函数会很困难。
+第1章讨论过，二维局域共形变换有无穷多个生成元。具有这一局域共形不变性的场论，称为\textbf{共形场论（CFT）}。共形场论最简单的例子，是无质量自由标量场和自由费米场。这些场是无相互作用的“自由”场， $N $点关联函数可由Wick定理计算。有相互作用的情形，从作用量根据Feynman规则微扰地计算关联函数会很困难。
 
 为避免微扰计算中的发散问题，使用称为正则化的方法，但这时引入的截断参数具有长度量纲，明显破坏了标度不变性。更成问题的是，作用量本身也很难求出。有相互作用的共形场论，被认为描述重整化群的不动点，一般来说，不存在容许从自由场作用量作微扰展开的耦合常数。
 
@@ -61,7 +61,7 @@ $T_{\mu\nu}(x)$ 是能动张量。由Noether定理，Poincaré不变性给出 $T
 \begin{equation}
 \phi^{\prime}\left(z^{\prime}, \bar{z}^{\prime}\right)=\left(\frac{d z^{\prime}}{d z}\right)^{-h}\left(\frac{d \bar{z}^{\prime}}{d \bar{z}}\right)^{-\bar{h}} \phi(z, \bar{z})
 \end{equation}
-称为共形权是 $(h,\bar{h}) $的初级场。因为变换 (3.7) 也包含全局共形变换，初级场是准初级场，但逆命题未必成立。在二维共形场论中，初级场的关联函数是研究主题之一。
+称为\textbf{共形权是 $(h,\bar{h}) $的初级场}。因为变换 (3.7) 也包含全局共形变换，初级场是准初级场，但逆命题未必成立。在二维共形场论中，初级场的关联函数是研究主题之一。
 
 考虑无穷小共形变换下初级场的行为。无穷小共形变换
 \begin{equation}
@@ -82,24 +82,20 @@ z^{\prime}=z+\epsilon(z), \quad \bar{z}^{\prime}=\bar{z}+\bar{\epsilon}(\bar{z})
 \begin{equation}
 \sum_{i=1}^{n}\left(h_{i} \partial_{i} \epsilon\left(z_{i}\right)+\epsilon\left(z_{i}\right) \partial_{i}+\bar{h}_{i} \bar{\partial}_{i} \bar{\epsilon}\left(\bar{z}_{i}\right)+\bar{\epsilon}\left(\bar{z}_{i}\right) \bar{\partial}_{i}\right)\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \cdots \phi_{n}\left(z_{n}, \bar{z}_{n}\right)\right\rangle=0
 \end{equation}
-
 这里用了记号 $\partial_i\equiv \partial/\partial z_i$ ， $\bar{\partial}_i\equiv \partial/\partial \bar{z}_i $。
 
 第2章得到的关联函数形式，也可从微分方程 (3.12) 得到。全局共形变换，由无穷小变换
 \begin{equation}
 \epsilon(z)=\epsilon_{-1}+\epsilon_{0} z+\epsilon_{1} z^{2}, \quad \bar{\epsilon}(\bar{z})=\bar{\epsilon}_{-1}+\bar{\epsilon}_{0} \bar{z}+\bar{\epsilon}_{1} \bar{z}^{2}
 \end{equation}
-
 生成。对两点函数
 \begin{equation}
 G^{(2)}\left(z_{1}, z_{2}, \bar{z}_{1}, \bar{z}_{2}\right)=\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \phi_{2}\left(z_{2}, \bar{z}_{2}\right)\right\rangle
 \end{equation}
-
 考虑无穷小平移变换$ \epsilon(z)=\epsilon_{-1}, \bar{\epsilon}(\bar{z})=\bar{\epsilon}_{-1}$ ，我们有
 \begin{equation}
 \left(\partial_{1}+\partial_{2}\right) G^{(2)}\left(z_{1}, z_{2}, \bar{z}_{1}, \bar{z}_{2}\right)=\left(\bar{\partial}_{1}+\bar{\partial}_{2}\right) G^{(2)}\left(z_{1}, z_{2}, \bar{z}_{1}, \bar{z}_{2}\right)=0
 \end{equation}
-
 于是， $G^{(2)}$ 是 $z=z_1-z_2$ 和$ \bar{z}=\bar{z}_1-\bar{z}_2$ 的函数。接着考虑无穷小标度变换$ \epsilon(z)=\epsilon_{0} z$, $\bar{\epsilon}(\bar{z})=\bar{\epsilon}_{0} \bar{z}$ ，我们有
 \begin{equation}
 \begin{aligned} &\left(h_{1}+z_{1} \partial_{1}+h_{2}+z_{2} \partial_{2}\right) G^{(2)}\left(z_{1}, z_{2}, \bar{z}_{1}, \bar{z}_{2}\right) \\ =&\left(\bar{h}_{1}+\bar{z}_{1} \bar{\partial}_{1}+\bar{h}_{2}+\bar{z}_{2} \bar{\partial}_{2}\right) G^{(2)}\left(z_{1}, z_{2}, \bar{z}_{1}, \bar{z}_{2}\right)=0 \end{aligned}
@@ -119,7 +115,7 @@ G^{(2)}\left(z_{i}, \bar{z}_{i}\right)=\frac{C}{z^{h_{1}+h_{2}} \bar{z}^{\bar{h}
 \end{equation}
 考虑全纯部分，首先用 $\partial=\partial_{1}=-\partial_{2} $，再代入 $G^{(2)}\left(z_{i}, \bar{z}_{i}\right)$ 的形式 (3.17) ，得到
 \[
-\left(2 h_{1} z_{1}+2 h_{2} z_{2}-\left(h_{1}+h_{2}\right)\left(z_{1}+z_{2}\right)\right) G^{(2)}=0
+\left[2 h_{1} z_{1}+2 h_{2} z_{2}-\left(h_{1}+h_{2}\right)\left(z_{1}+z_{2}\right)\right] G^{(2)}=0
 \]
 这个式子要对任意 $z_1,z_2$ 成立，就应有 $2 h_{1}=h_{1}+h_{2}, 2 h_{2}=h_{1}+h_{2}$ ，也就是$ h_1=h_2$ 。反全纯部分也一样，那么两点函数就只在 $h_1=h_2 $时非零：
 \begin{equation}
@@ -137,14 +133,13 @@ $h_i=\bar{h}_i $对应自旋为0的情形，我们复现了上章的结果。
 \begin{equation}
 \begin{aligned} &\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \phi_{2}\left(z_{2}, \bar{z}_{2}\right) \phi_{3}\left(z_{3}, \bar{z}_{3}\right) \phi_{4}\left(z_{4}, \bar{z}_{4}\right)\right\rangle \\ =& F\left(\frac{z_{12} z_{34}}{z_{13} z_{24}}, \frac{\bar{z}_{12} \bar{z}_{34}}{\bar{z}_{13} \bar{z}_{24}}\right) \prod_{i<j} z_{i j}^{-h_{i}-h_{j}+h / 3} \bar{z}_{i j}^{-\bar{h}_{i}-\bar{h}_{j}+\bar{h} / 3} \end{aligned}
 \end{equation}
-
-这里， $h=\sum_{i=1}^4h_i $， $\bar{h}=\sum_{i=1}^4\bar{h}_i ， z_{12}z_{34}/z_{13}z_{24} $是四点 $z_1,z_2,z_3,z_4 $的交比。
+这里， $h=\sum_{i=1}^4h_i $， $\bar{h}=\sum_{i=1}^4\bar{h}_i $，$ z_{12}z_{34}/z_{13}z_{24} $是四点 $z_1,z_2,z_3,z_4 $的交比。
 
 接下来推导一般局域共形变换的Ward恒等式。无穷小共形变换$ z \rightarrow z^{\prime}=z+\epsilon(z), \bar{z}\to\bar{z}^{\prime}=\bar{z}+\bar{\epsilon}(\bar{z}) $下，作用量变为： $S\to S+\delta S $。这里， $\delta S $由 (3.5) 给出。用复坐标 $(z,\bar{z}) $写成
 \begin{equation}
 \begin{aligned} \delta S &=\int d^{2} x\left(T_{z z} \partial^{z} \epsilon^{z}+T_{\bar{z} \bar{z}} \partial^{\bar{z}} \epsilon^{\bar{z}}\right) \\ &=\int d^{2} x\left(T_{z z} g^{z \bar{z}} \partial_{\bar{z}} \epsilon^{z}+T_{\bar{z} \bar{z}} g^{z \bar{z}} \partial_{z} \epsilon^{\bar{z}}\right) \end{aligned}
 \end{equation}
-复平面上 $g^{z\bar{z}}=2 。初级场 \phi(z,\bar{z})$ 在无穷小共形变换下，按 (3.11) 变换。
+复平面上 $g^{z\bar{z}}=2 $。初级场 $\phi(z,\bar{z})$ 在无穷小共形变换下，按 (3.11) 变换。
 
 初级场$ \phi_i(z_i,\bar{z}_i) $的关联函数的路径积分形式是
 \[
@@ -162,7 +157,7 @@ $\varphi(z,\bar{z}) $是构成初级场 $\phi_i(z_i,\bar{z}_i) $的更基本的�
 \begin{equation}
 \sum_{i=1}^{n}\left\langle\phi_{1} \cdots \delta \phi_{i} \cdots \phi_{n}\right\rangle+\left\langle\int d^{2} x 2\left(T_{z z} \bar{\partial} \epsilon+T_{\bar{z} \bar{z}} \partial \bar{\epsilon}\right) \phi_{1} \cdots \phi_{n}\right\rangle=0
 \end{equation}
-这个式子称为共形Ward恒等式。
+这个式子称为\textbf{共形Ward恒等式}。
 
 这里可用线积分的Green公式
 \begin{equation}
@@ -177,8 +172,9 @@ $\varphi(z,\bar{z}) $是构成初级场 $\phi_i(z_i,\bar{z}_i) $的更基本的�
 
 考虑用复坐标 $(z,\bar{z})$ 写，我们有
 \begin{equation}
-\begin{aligned} &d x=\frac{d z+d \bar{z}}{2}, \quad d y=\frac{d z-d \bar{z}}{2 i}\\ &\frac{\partial}{\partial x}=\partial+\bar{\partial}, \quad \frac{\partial}{\partial y}=i \partial-i \bar{\partial} \end{aligned}
-\end{equation}\
+\begin{aligned} &d x=\frac{d z+d \bar{z}}{2},&&d y=\frac{d z-d \bar{z}}{2 i}\\ &\frac{\partial}{\partial x}=\partial+\bar{\partial}, && \frac{\partial}{\partial y}=i \partial-i \bar{\partial} 
+\end{aligned}
+\end{equation}
 于是
 \begin{equation}
 	\int_{C} \frac{1}{2}(P-i Q) d z+\frac{1}{2}(P+i Q) d \bar{z}=\int_{R} d x d y(\partial(Q-i P)+\bar{\partial}(Q+i P))
@@ -200,7 +196,6 @@ $T_{zz} $是全纯函数，$ T_{\bar{z} \bar{z}} $是反全纯函数，因此 (3
 	\includegraphics[width=0.6\linewidth]{fig/3.2.png}
 	\caption{ 点$z_1,\cdots,z_n$，围绕它们的路径$C$，以及围绕各$z_i$的路径$C_i$。}
 \end{figure}
-
 定义 $T(z),\bar{T}(\bar{z}) $为
 \[
 2 \pi T_{z z}=T(z), \quad 2 \pi T_{\bar{z} \bar{z}}=\bar{T}(\bar{z})
@@ -210,7 +205,7 @@ $T_{zz} $是全纯函数，$ T_{\bar{z} \bar{z}} $是反全纯函数，因此 (3
 \begin{aligned} &\int_{C} d z \frac{1}{2 \pi i} \epsilon(z)\left\langle T(z) \phi_{1} \cdots \phi_{n}\right\rangle-\int_{C} d \bar{z} \frac{1}{2 \pi i} \bar{\epsilon}(\bar{z})\left\langle\bar{T}(\bar{z}) \phi_{1} \cdots \phi_{n}\right\rangle\\ =&\sum_{i=1}^{n}\left(h_{i} \partial_{i} \epsilon\left(z_{i}\right)+\epsilon\left(z_{i}\right) \partial_{i}+\bar{h}_{i} \bar{\partial}_{i} \bar{\epsilon}\left(\bar{z}_{i}\right)+\bar{\epsilon}\left(\bar{z}_{i}\right) \bar{\partial}_{i}\right)\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \cdots \phi_{n}\left(z_{n}, \bar{z}_{n}\right)\right\rangle \end{aligned}
 \end{equation}
 
-这里，$ C$ 上对 $z$ 积分的被积函数，在 $C $围成的区域上是全纯的，除了插入初级场的点 $z_i$ 。根据积分路径的变形原理， $C $上的积分等于围绕点 $z_i$ 的小回路 $C_i$ 上的积分之和，改写成
+这里，$ C$ 上对 $z$ 积分的被积函数，在 $C $围成的区域上是全纯的，除了插入初级场的点 $z_i$ 。根据积分路径的变形原理\footnote{[就是柯西定理]}， $C $上的积分等于围绕点 $z_i$ 的小回路 $C_i$ 上的积分之和，改写成
 \[
 \sum_{i=1}^{n} \int_{C_{i}} d z \frac{1}{2 \pi i} \epsilon(z)\left\langle T(z) \phi_{1} \cdots \phi_{n}\right\rangle
 \]
@@ -223,7 +218,7 @@ $T_{zz} $是全纯函数，$ T_{\bar{z} \bar{z}} $是反全纯函数，因此 (3
 \begin{equation}
 T(z) \phi_{i}\left(z_{i}, \bar{z}_{i}\right)\sim\frac{h_{i}}{\left(z-z_{i}\right)^{2}} \phi_{i}\left(z_{i}, \bar{z}_{i}\right)+\frac{1}{z-z_{i}} \partial \phi_{i}\left(z_{i}, \bar{z}_{i}\right)+\text{Regular}
 \end{equation}
-"Regular"指展开中的常数项和$z-z_i $的正幂次项。右边在 $C_i $上积分，留数定理给出
+“Regular”指展开中的常数项和$z-z_i $的正幂次项。右边在 $C_i $上积分，留数定理给出
 \begin{equation}
 \begin{aligned} &-\int_{C_{i}} \frac{d z}{2 \pi i} \epsilon(z)\left\{\frac{h_{i}}{\left(z-z_{i}\right)^{2}} \phi_{i}\left(z_{i}, \bar{z}_{i}\right)+\frac{1}{z-z_{i}} \partial \phi_{i}\left(z_{i}, \bar{z}_{i}\right)\right\} \\ =&-h_{i} \partial \epsilon\left(z_{i}\right) \phi_{i}\left(z_{i}, \bar{z}_{i}\right)-\epsilon\left(z_{i}\right) \partial \phi_{i}\left(z_{i}, \bar{z}_{i}\right) \end{aligned}
 \end{equation}
@@ -264,7 +259,7 @@ u=x^{0}+i x^{1}, \quad \bar{u}=x^{0}-i x^{1}
 
 换句话说，时间在复平面上对应径向坐标。时间平移 $x^0\to x^0+a$ 对应复坐标 $z$ 的标度变换 $z\to e^a z$ ，空间平移 $x^1\to x^1+b$ 对应旋转 $z\to e^{ib}z $。
 
-圆柱 $(x^0,x^1)$ 上场的期望值由编时乘积定义。在复平面上，自然就要按径向坐标排列场的顺序。这样的顺序称为径向顺序，场的乘积称为径向顺序积。算符 $A(z),B(w) $的径向顺序积定义为
+圆柱 $(x^0,x^1)$ 上场的期望值由编时乘积定义。在复平面上，自然就要按径向坐标排列场的顺序。这样的顺序称为\textbf{径向顺序}，场的乘积称为\textbf{径向顺序积}。算符 $A(z),B(w) $的径向顺序积定义为
 \begin{equation}
 	R(A(z) B(w))=\left\{\begin{array}{ll} A(z) B(w), & |z|>|w| \\ B(w) A(z), & |z|<|w| \end{array}\right.
 \end{equation}
@@ -313,15 +308,15 @@ u=x^{0}+i x^{1}, \quad \bar{u}=x^{0}-i x^{1}
 	\caption{$C_1$：满足$|z| >|w|$的闭合曲线，$C_2$：满足$|z|<|w|$的闭合曲线，$C_w$：$C_1-C_2$变形得到的围绕$w$的闭合曲线。}
 \end{figure}
 
-因为$ C_w $可以任意小，贡献积分的是 $z\to w $ T(z) 与$ \phi(w,\bar{w})$ 的OPE。代入OPE
+因为$ C_w $可以任意小，贡献积分的是 $z\to w $，$T(z)$ 与$ \phi(w,\bar{w})$ 的OPE。代入OPE
 \[
 	T(z) \phi(w, \bar{w})=\frac{h}{(z-w)^{2}} \phi(w, \bar{w})+\frac{1}{z-w} \partial \phi(w, \bar{w})+\text{Regular}
 \]
 我们有
 \begin{equation}
-	\begin{aligned} \left[Q, \phi(w, \bar{w})\right]&=\int_{C_{w}} \frac{d z}{2 \pi i} \epsilon(z)\left\{\frac{h}{(z-w)^{2}} \phi_{i}(w, \bar{w})+\frac{1}{z-w} \partial \phi_{i}(w, \bar{w})\right\}+含\bar{T}的项\\ &=h \partial \epsilon(w) \phi(w, \bar{w})+\epsilon(w) \partial \phi(w, \bar{w})+\bar{h} \bar{\partial} \bar{\epsilon}(\bar{w}) \phi(w, \bar{w})+\bar{\epsilon}(\bar{w}) \bar{\partial} \phi(w, \bar{w}) \end{aligned}
+	\begin{aligned} \left[Q, \phi(w, \bar{w})\right]&=\int_{C_{w}} \frac{d z}{2 \pi i} \epsilon(z)\left\{\frac{h}{(z-w)^{2}} \phi_{i}(w, \bar{w})+\frac{1}{z-w} \partial \phi_{i}(w, \bar{w})\right\}+\text{含}\bar{T}\text{的项}\\ &=h \partial \epsilon(w) \phi(w, \bar{w})+\epsilon(w) \partial \phi(w, \bar{w})+\bar{h} \bar{\partial} \bar{\epsilon}(\bar{w}) \phi(w, \bar{w})+\bar{\epsilon}(\bar{w}) \bar{\partial} \phi(w, \bar{w}) \end{aligned}
 \end{equation}
-于是，通过$ \delta\phi=[Q,\phi] $得到了 $\phi$ 的无穷小变化。用径向顺序积定义的对易关系可由OPE计算。
+于是，通过$ {\color{red}-}\delta\phi=[Q,\phi] $得到了 $\phi$ 的无穷小变化\footnote{[按照本书的符号约定，似乎这里漏掉了一个负号，下一节也存在同样的问题，均使用红色标出]}。用径向顺序积定义的对易关系可由OPE计算。
 \section{Virasoro代数}
 \subsection{中心荷}
 考虑能动张量 $T(z),\bar{T}(\bar{z})$ 的关联函数。因为能动张量 $T(z) $本来就是 $(2,0) $型张量，我们预期它是共形权为 $(2,0) $的初级场。同样， $\bar{T}(\bar{z})$ 是 $(0,2) $型张量，我们预期它是共形权为 $(0,2) $的初级场。$ T(z)$ 的单点函数 $\langle T(z)\rangle $平移不变，因此是不依赖于$ z$的常数，设为零：
@@ -337,7 +332,7 @@ u=x^{0}+i x^{1}, \quad \bar{u}=x^{0}-i x^{1}
 	T(z) T(w)=\frac{\frac{c}{2}}{(z-w)^{4}}+\frac{2 T(w)}{(z-w)^{2}}+\frac{\partial T(w)}{z-w}+\cdots
 \end{equation}
 
-这里，$\cdots$代表展开中 z-w 的非负幂次项。同样，$ \bar{T}(\bar{z})$ 和 $\bar{T}(\bar{w})$ 的OPE是
+这里，$\cdots$代表展开中$ z-w $的非负幂次项。同样，$ \bar{T}(\bar{z})$ 和 $\bar{T}(\bar{w})$ 的OPE是
 \begin{equation}
 	\bar{T}(\bar{z}) \bar{T}(\bar{w})=\frac{\frac{\bar{c}}{2}}{(\bar{z}-\bar{w})^{4}}+\frac{2 \bar{T}(\bar{w})}{(\bar{z}-\bar{w})^{2}}+\frac{\partial \bar{T}(\bar{w})}{\bar{z}-\bar{w}}+\cdots
 \end{equation}
@@ -345,20 +340,20 @@ u=x^{0}+i x^{1}, \quad \bar{u}=x^{0}-i x^{1}
 
 能动张量 $T(z) $的无穷小共形变化是
 \begin{equation}
-	\delta T(w)=\int \frac{d z}{2 \pi i} \epsilon(z) T(z) T(w)
+	{\color{red}-}\delta T(w)=\int \frac{d z}{2 \pi i} \epsilon(z) T(z) T(w)
 \end{equation}
-右边代入OPE (3.48) ，得到
+右边代入OPE (3.48) ，得到\footnote{$n$阶极点留数可以使用下式计算：\[\Res[f(z),a]=\lim_{z\to a}\frac{1}{(n-1)!}\frac{d^{n-1}}{dz^{n-1}}\left[(z-a)^nf(z)\right]\]}
 \begin{equation}
-	\begin{aligned} \delta T(w) &=\int \frac{d z}{2 \pi i} \epsilon(z)\left\{\frac{\frac{c}{2}}{(z-w)^{4}}+\frac{2 T(w)}{(z-w)^{2}}+\frac{\partial T(w)}{z-w}\right\} \\ &=\frac{c}{2} \frac{1}{3 !} \partial^{3} \epsilon(w)+2 \partial \epsilon(w) T(w)+\epsilon(w) \partial T(w) \end{aligned}
+	\begin{aligned} {\color{red}-}\delta T(w) &=\int \frac{d z}{2 \pi i} \epsilon(z)\left\{\frac{\frac{c}{2}}{(z-w)^{4}}+\frac{2 T(w)}{(z-w)^{2}}+\frac{\partial T(w)}{z-w}\right\} \\ &=\frac{c}{2} \frac{1}{3 !} \partial^{3} \epsilon(w)+2 \partial \epsilon(w) T(w)+\epsilon(w) \partial T(w) \end{aligned}
 \end{equation}
 
 能动张量 $T(w)$ 的无穷小共形变化，与初级场的不同只在于多了含$ \epsilon(w) $三阶导的项。在全局共形变换的情形， $\epsilon(w) $是$ w$ 的二次多项式，这项就为零。因此，全局共形变换下，$ T(w) $的行为同初级场一样，那么它是准初级场（见2.3节）。
 
-有限共形变换 $z \rightarrow w=w(z) $下， $T(z) $变换为：
+有限共形变换 $z \rightarrow w=w(z) $下， $T(z) $变换为：\footnote{[此式对于一般的共形变换证明是较难的，但是对于无穷小变换可以很快地验证，本章末尾会对自由费米子和玻色子进行简要证明]}
 \begin{equation}
 	T(z) \rightarrow T^{\prime}(w)=T(z)\left(\frac{d w}{d z}\right)^{-2}-\frac{c}{12} S(w, z)\left(\frac{d w}{d z}\right)^{-2}
 \end{equation}
-$S(w,z)$ 是Schwarz导数，定义为
+$S(w,z)$ 是\textbf{Schwarz导数}，定义为
 \begin{equation}
 	S(w, z)=\frac{\partial_{z} w \partial_{z}^{3} w-\frac{3}{2}\left(\partial_{z}^{2} w\right)^{2}}{\left(\partial_{z} w\right)^{2}}
 \end{equation}
@@ -367,7 +362,7 @@ $S(w,z)$ 是Schwarz导数，定义为
 \begin{equation}
 	S(w, z)=\left(\partial_{z} f\right)^{2} S(w, f)+S(f, z)
 \end{equation}
-中心荷出现在能动张量的两点函数中，导致能动张量的变换规则不同于常规的 $(2,0) $型张量。量子效应破坏守恒律和变换规则的现象，称为反常。 $c$ 就是表现共形反常的指标。
+中心荷出现在能动张量的两点函数中，导致能动张量的变换规则不同于常规的 $(2,0) $型张量。量子效应破坏守恒律和变换规则的现象，称为\textbf{反常}。 $c$ 就是表现\textbf{共形反常}的指标。
 
 \subsection{ Virasoro代数}
 
@@ -405,7 +400,7 @@ $C_w$ 是围绕$ z=w $的闭合曲线。右边代入OPE (3.48) ：
 	\left[L_{n}, L_{m}\right]=(n-m) L_{n+m}+\frac{c}{12} n\left(n^{2}-1\right) \delta_{n+m, 0}
 \end{equation}
 
-这个代数称为\textbf{Virasoro代数}，$ L_n$ 是Virasoro代数的生成元。中心荷 $c$ 是常规的数，与Virasoro代数的生成元对易，这样的元素称为中心。因为右边也可看成$ L_n $和 $c$ 的线性组合，我们称这个代数是第1章讨论的二维共形代数加上$ c$ 扩张得到的，是它的中心扩张。
+这个代数称为\textbf{Virasoro代数}，$ L_n$ 是Virasoro代数的生成元。中心荷 $c$ 是常规的数，与Virasoro代数的生成元对易，这样的元素称为中心。因为右边也可看成$ L_n $和 $c$ 的线性组合，我们称这个代数是第1章讨论的二维共形代数加上$ c$ \textbf{扩张}得到的，是它的\textbf{中心扩张}。
 
 $\bar{L}_n$ 也是同一代数的生成元：
 \begin{equation}	
@@ -440,7 +435,7 @@ $|0\rangle$ 是对应真空的右矢。关联函数在全局共形变换下不�
 \end{equation}
 这意味着真空是 $SL(2,\mathbb{C}) $不变的。
 
-Virasoro代数的一般生成元$ L_m $作用在 $|0\rangle $上需要满足的条件，由 $T(z)|0\rangle $在 $z\to 0 $时正规来确定。根据 $T(z$ 的Laurent展开式
+Virasoro代数的一般生成元$ L_m $作用在 $|0\rangle $上需要满足的条件，由 $T(z)|0\rangle $在 $z\to 0 $时正规来确定。根据 $T(z)$ 的Laurent展开式
 \begin{equation}
 	T(z)|0\rangle=\sum_{n=-\infty}^{\infty} L_{n}|0\rangle z^{-n-2}
 \end{equation}
@@ -475,7 +470,7 @@ A(t, x)^{\dagger}=e^{i H t} A(0, x)^{\dagger} e^{-i H t}
 $$
 也就是说，时间演化后作Hermite共轭，等价于 $t=0$ 时取Hermite共轭再时间演化。
 
-时间 $t$ 解析延拓（ $\tau=-i t$ ）到虚轴，就得到Euclid空间 $(\tau,x)$ 中的时间演化：
+时间 $t$ 解析延拓（ $\tau=+i t$ ）到虚轴\footnote{[原书为$\tau=-i t$]}，就得到Euclid空间 $(\tau,x)$ 中的时间演化：
 $$
 A(\tau, x)=e^{H \tau} A(0, x) e^{-H \tau}
 $$
@@ -591,7 +586,7 @@ $$
 $$
 :AB:(z)\quad\text{或}\quad(AB)(z)
 $$
-表示算符$ A(z),B(z)$ 的正规顺序积。也就是取算符乘积 $A(w)B(z) $在两点接近即 $w\to z $时的极限，再减去发散项得到的算符。
+表示算符$ A(z),B(z)$ 的\textbf{正规顺序积}。也就是取算符乘积 $A(w)B(z) $在两点接近即 $w\to z $时的极限，再减去发散项得到的算符。
 
 简单起见，之后只考虑全纯部分。由 (3.81) ， $\partial \varphi(z) $的两点函数是
 \begin{equation}
@@ -617,7 +612,6 @@ OPE中的奇异部分记作
 \begin{equation}
 	\wick{\c A(z) \c B}(w)=\sum_{n=1}^{N} \frac{\{A B\}_{n}(w)}{(z-w)^{n}}
 \end{equation}
-
 这里， $\{AB\}_0(w)$ 就是 $A$ 和$ B$ 的正规顺序积$ (AB)(w) $：
 \begin{equation}
 	\begin{aligned} \{A B\}_{0}(w) &=(A B)(w) \\ &=\lim _{z \rightarrow w}\left(A(z) B(w)-	\wick{\c A(z) \c B}(w)\right) \end{aligned}
@@ -626,7 +620,6 @@ $(AB)(w) $也是OPE中 $(z-w)^0$那项的系数：
 \begin{equation}
 	(A B)(w)=\frac{1}{2 \pi i} \oint d z \frac{A(z) B(w)}{z-w}
 \end{equation}
-
 
 一般来说，$ (AB)(w) $不同于 $(BA)(w)$ 。事实上，由OPE
 \begin{equation}
@@ -640,7 +633,6 @@ $(AB)(w) $也是OPE中 $(z-w)^0$那项的系数：
 \begin{equation}
 	A(z)(B C)(w)=\frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left\{ \wick{\c A(z) \c B}(x) C(w)+B(x) \wick{\c A(z) \c C}(w)\right\}
 \end{equation}
-
 例如，要计算$ \partial \varphi(z) $和 $(\partial \varphi \partial \varphi)(w)$ 的OPE，用 (3.95) 就转换成计算 $w $处的留数：
 \begin{equation}
 	\begin{aligned} \partial \varphi(z)(\partial \varphi \partial \varphi)(w)=& \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left\{-\frac{1}{(z-x)^{2}} \partial \varphi(w)+\partial \varphi(x)\left(\frac{-1}{(z-w)^{2}}\right)\right\} \\ =&-\frac{\partial \varphi(w)}{(z-w)^{2}}-\frac{\partial \varphi(w)}{(z-w)^{2}} \\ =& \frac{-2 \partial \varphi(w)}{(z-w)^{2}} \end{aligned}
@@ -677,7 +669,7 @@ $(AB)(w) $也是OPE中 $(z-w)^0$那项的系数：
 因此，这个CFT的中心荷是 $c=1$ 。可以看到，计算复合算符间的OPE，需要多次计算基本场间的OPE。$ T(z) $间的OPE中出现的中心荷，是作两次缩并得到的。
 
 \section{顶点算符}
-自由玻色场CFT中一类重要的初级场形如 $V_{\alpha}(z)=: \exp (i \sqrt{2} \alpha \varphi(z)): $，称为顶点算符。在弦论中，这类算符对应散射振幅Feynman图的顶点，因此得名。展开$ V_\alpha(z)$ 中的指数函数：
+自由玻色场CFT中一类重要的初级场形如 $V_{\alpha}(z)=: \exp (i \sqrt{2} \alpha \varphi(z)): $，称为\textbf{顶点算符}。在弦论中，这类算符对应散射振幅Feynman图的顶点，因此得名。展开$ V_\alpha(z)$ 中的指数函数：
 \begin{equation}
 	V_{\alpha}(z)=: e^{i \sqrt{2} \alpha \varphi(z)}:=\sum_{n=0}^{\infty} \frac{(i \sqrt{2} \alpha)^{n}}{n !}: \varphi^{n}:(z)
 \end{equation}
@@ -743,7 +735,7 @@ $$
 \begin{equation}
 	\bar{\partial} \psi=0, \quad \partial \bar{\psi}=0
 \end{equation}
-那么$ \psi(z,\bar{z})$ 全纯而 $\bar{\psi}(z,\bar{z})$ 反全纯，可以写作$ \psi(z) 和 \bar{\psi}(\bar{z})$ 。两点函数是
+那么$ \psi(z,\bar{z})$ 全纯而 $\bar{\psi}(z,\bar{z})$ 反全纯，可以写作$ \psi(z) $和$ \bar{\psi}(\bar{z})$ 。两点函数是
 \begin{equation}
 	\langle\psi(z) \psi(w)\rangle=\frac{1}{z-w}, \quad\langle\bar{\psi}(\bar{z}) \bar{\psi}(\bar{w})\rangle=\frac{1}{\bar{z}-\bar{w}}
 \end{equation}
@@ -775,11 +767,11 @@ $$
 
 接下来计算 $T(z) $间的OPE。 $A(z) $是玻色算符时， (3.95) 成立，于是对自由费米子有
 \begin{equation}
-	\begin{aligned} T(z) T(w) &=-\frac{1}{2} T(z)(\psi \partial \psi)(w) \\ &=-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left\{{ \overset{|^{\overline{\quad \quad }}|}{T(z) \psi}(x)} \partial \psi(w)+\psi(x) \overset{|^{\overline{\quad \quad }}|}{T(z) \partial \psi}(w)\right\} \end{aligned}
+	\begin{aligned} T(z) T(w) &=-\frac{1}{2} T(z)(\psi \partial \psi)(w) \\ &=-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left\{\wick{ \c T(z) \c\psi}(x) \partial \psi(w)+\psi(x) \wick{\c T(z) \partial \c\psi}(w)\right\} \end{aligned}
 \end{equation}
 先计算右边第一项。同自由玻色子情形一样，需要作两次缩并：
 \begin{equation}
-	\begin{aligned} &-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left(\frac{\frac{1}{2} \psi(x)}{(z-x)^{2}}+\frac{\partial \psi(x)}{z-x}\right) \partial \psi(w) \\ =&-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left\{\frac{\frac{1}{2}}{(z-x)^{2}}\left[\frac{1}{(x-w)^{2}}+\psi \partial \psi(w)\right]+\frac{1}{z-x}\left[\frac{-2}{(x-w)^{3}}+(\partial \psi \partial \psi)(w)\right]\right\} \\ =& \frac{\frac{1}{4}}{(z-w)^{4}}+\frac{-\frac{1}{4}(\psi \partial \psi)}{(z-w)^{2}}+\frac{-\frac{1}{2}(\partial \psi \partial \psi)}{z-w}+\cdots \end{aligned}
+	\begin{aligned} &-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left(\frac{\frac{1}{2} \psi(x)}{(z-x)^{2}}+\frac{\partial \psi(x)}{z-x}\right) \partial \psi(w) \\ =&-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w}\left\{\frac{\frac{1}{2}}{(z-x)^{2}}\left[\frac{1}{(x-w)^{2}}+(\psi \partial \psi)(w)\right]+\frac{1}{z-x}\left[\frac{-2}{(x-w)^{3}}+(\partial \psi \partial \psi)(w)\right]\right\} \\ =& \frac{\frac{1}{4}}{(z-w)^{4}}+\frac{-\frac{1}{4}(\psi \partial \psi)(w)}{(z-w)^{2}}+\frac{-\frac{1}{2}(\partial \psi \partial \psi)(w)}{z-w}+\cdots \end{aligned}
 \end{equation}
 由 $T$ 和 $\psi$ 的OPE得到
 \begin{equation}
@@ -787,7 +779,7 @@ $$
 \end{equation}
 那么第二项是
 \begin{equation}
-	\begin{aligned} &-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w} \psi(x)\left\{\frac{\psi(w)}{(z-w)^{3}}+\frac{\frac{3}{2} \partial \psi(w)}{(z-w)^{2}}+\frac{\partial^{2} \psi(w)}{z-w}\right\} \\ =& \frac{-\frac{3}{4}(\psi \partial \psi)}{(z-w)^{2}}+\frac{-\frac{1}{2}\left(\psi \partial^{2} \psi\right)}{z-w}+\cdots \end{aligned}
+	\begin{aligned} &-\frac{1}{2} \frac{1}{2 \pi i} \oint \frac{d x}{x-w} \psi(x)\left\{\frac{\psi(w)}{(z-w)^{3}}+\frac{\frac{3}{2} \partial \psi(w)}{(z-w)^{2}}+\frac{\partial^{2} \psi(w)}{z-w}\right\} \\ =& \frac{-\frac{3}{4}(\psi \partial \psi)(w)}{(z-w)^{2}}+\frac{-\frac{1}{2}\left(\psi \partial^{2} \psi\right)(w)}{z-w}+\cdots \end{aligned}
 \end{equation}
 这里用到了 $\psi\psi=0 $，因为 $\psi $反对易。最终得到
 \begin{equation}
