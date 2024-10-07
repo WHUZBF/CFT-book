@@ -1,8 +1,8 @@
 \chapter{Virasoro代数的表示和关联函数}
-本章，描述Virasoro代数的最高权表示同初级场的次级场间的关系后，我们定义初级场的OPE代数。OPE代数的结合律给出四点函数需要满足的非平凡条件（交叉对称性）。
+本章，描述Virasoro代数的最高权表示同初级场的次级场间的关系后，我们定义初级场的OPE代数。OPE代数的结合律给出四点函数需要满足的非平凡条件(交叉对称性)。
 
 \section{Virasoro代数的表示}
-令$ \phi(z,\bar{z}) $是共形权为 $(h,\bar{h}) $的初级场。$ \phi(0,0)$ 作用在 $SL(2,\mathbb{C})$ 不变真空$ |0\rangle $上得到的态（上章记作 $|\phi\rangle$ ），本章记作
+令$ \phi(z,\bar{z}) $是共形权为 $(h,\bar{h}) $的初级场。$ \phi(0,0)$ 作用在 $SL(2,\mathbb{C})$ 不变真空$ |0\rangle $上得到的态(上章记作 $|\phi\rangle$ )，本章记作
 \begin{equation}
 	|h, \bar{h}\rangle=\phi(0,0)|0\rangle
 \end{equation}
@@ -41,9 +41,9 @@ $n=0 $时则是
 \begin{equation}
 L_{-n_{1}} \cdots L_{-n_{k}} \bar{L}_{-m_{1}} \cdots \bar{L}_{-m_{l}}|h, \bar{h}\rangle
 \end{equation}
-称为\textbf{次级态（descendant state）}，其中$ n_i,m_i $是正整数。由Virasoro代数 $[L_{0}, L_{-n} ]=n L_{-n}, [\bar{L}_{0}, \bar{L}_{-n} ]=n \bar{L}_{-n}$ 可知，这些次级态是 $L_0 $的对应本征值 $h+N$ 的本征态，也是 $\bar{L}_0$ 的对应本征值 $\bar{h}+M $的本征态，其中$ N=\sum_{i=1}^{k} n_{i}$ ， $M=\sum_{i=1}^{l} m_{i} $。分别称整数$ N,M $是次级态的右级（level）和左级。
+称为\textbf{次级态(descendant state)}，其中$ n_i,m_i $是正整数。由Virasoro代数 $[L_{0}, L_{-n} ]=n L_{-n}$，$ [\bar{L}_{0}, \bar{L}_{-n} ]=n \bar{L}_{-n}$ 可知，这些次级态是 $L_0 $的对应本征值 $h+N$ 的本征态，也是 $\bar{L}_0$ 的对应本征值 $\bar{h}+M $的本征态，其中$ N=\sum_{i=1}^{k} n_{i}$ ， $M=\sum_{i=1}^{l} m_{i} $。分别称整数$ N,M $是次级态的右级（level）和左级。
 
-最高权态 $|h,\bar{h}\rangle$ 和它的次级态张成的向量空间是Virasoro代数的表示。因为右模$ L_n 与左模 \bar{L}_m$对易，这个向量空间也可看成右模最高权态 $|h\rangle$ 和左模最高权态 $|\bar{h}\rangle $给出的表示的张量积：
+最高权态 $|h,\bar{h}\rangle$ 和它的次级态张成的向量空间是Virasoro代数的表示。因为右模$ L_n $与左模 $\bar{L}_m$对易，这个向量空间也可看成右模最高权态 $|h\rangle$ 和左模最高权态 $|\bar{h}\rangle $给出的表示的张量积：
 \begin{equation}
 	|h, \bar{h}\rangle=|h\rangle \otimes|\bar{h}\rangle
 \end{equation}
@@ -236,8 +236,8 @@ $|\psi_k\rangle$ 可展开成
 \begin{equation}
 	\left|\psi_{k}\right\rangle=\sum_{N=0}^{\infty} z^{N}\left|h_{k}, N\right\rangle
 \end{equation}
-例如
-\begin{align} \left|h_{k}, 0\right\rangle &=\left|h_{k}\right\rangle &(4.50)\\ \left|h_{k}, 1\right\rangle &=\beta_{12}^{k\{1\}} L_{-1}\left|h_{k}\right\rangle \\ \left|h_{k}, 2\right\rangle &=\left(\beta_{12}^{k\{1,1\}} L_{-1}^{2}+\beta_{12}^{k\{2\}} L_{-2}\right)\left|h_{k}\right\rangle  \end{align}
+例如\footnote{[这里记号有点混乱，$\ket{h_k}$在这里应该理解为共形权为$h_k$的初级态，也就是前面的$\ket{\phi_k}$]}
+\begin{align} \left|h_{k}, 0\right\rangle &=\left|h_{k}\right\rangle \\ \left|h_{k}, 1\right\rangle &=\beta_{12}^{k\{1\}} L_{-1}\left|h_{k}\right\rangle \\ \left|h_{k}, 2\right\rangle &=\left(\beta_{12}^{k\{1,1\}} L_{-1}^{2}+\beta_{12}^{k\{2\}} L_{-2}\right)\left|h_{k}\right\rangle  \end{align}
 (4.49) 代入 (4.47),(4.48) 。代入 (4.48) 得到的式子显然成立。代入 (4.47) 得到
 \begin{equation}
 	L_{n}\left|\psi_{k}\right\rangle=\sum_{N=0}^{\infty} z^{n+N}\left(N-h_{1}-h_{2}+h_{k}+(n+1) h_{1}\right)\left|h_{k}, N\right\rangle
@@ -294,9 +294,9 @@ $z=z_1$ 处是发散的，不过可以考虑取极限 $z=z_1'\to z_1 $，我们�
 \begin{equation}
 	\begin{aligned} &\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \phi_{2}\left(z_{2}, \bar{z}_{2}\right) \phi_{3}\left(z_{3}, \bar{z}_{3}\right) \phi_{4}\left(z_{4}, \bar{z}_{4}\right)\right\rangle \\ =&\left(\frac{z_{24}}{z_{21} z_{41}}\right)^{h_{1}}\left(\frac{z_{41}}{z_{24} z_{21}}\right)^{h_{2}}\left(\frac{z_{21} z_{41}}{z_{24} z_{31}^{2}}\right)^{h_{3}}\left(\frac{z_{21}}{z_{24} z_{41}}\right)^{h_{4}} \\ &\times\left(\frac{\bar{z}_{24}}{\bar{z}_{21} \bar{z}_{41}}\right)^{\bar{h}_{1}}\left(\frac{\bar{z}_{41}}{\bar{z}_{24} \bar{z}_{21}}\right)^{\bar{h}_{2}}\left(\frac{\bar{z}_{21} \bar{z}_{41}}{\bar{z}_{24} \bar{z}_{31}^{2}}\right)^{\bar{h}_{3}}\left(\frac{\bar{z}_{21}}{\bar{z}_{24} \bar{z}_{41}}\right)^{\bar{h}_{4}} G^{21}_{43}(x, \bar{x}) \end{aligned}
 \end{equation}
-其中
+其中\footnote{[原文的记号容易引起误会，这里进行了更正]}
 \begin{equation}
-	\begin{aligned} G_{43}^{21}(x, \bar{x}) &=\lim _{w_{1}', \bar{w}_{1}' \rightarrow \infty}\left(w_{1}^{\prime}\right)^{2 h_{1}}\left(\bar{w}_{1}^{\prime}\right)^{2 \bar{h}_{1}}\left\langle\phi_{1}\left(w_{1}^{\prime}, \bar{w}_{1}^{\prime}\right) \phi_{2}(1,1) \phi_{3}(x, \bar{x}) \phi_{4}(0,0)\right\rangle \\ &=\left\langle\phi_{1}(\infty, \infty) \phi_{2}(1,1) \phi_{3}(x, \bar{x}) \phi_{4}(0,0)\right\rangle \end{aligned}
+	\begin{aligned} G_{43}^{21}(x, \bar{x}) &=\lim _{w_{1}', \bar{w}_{1}' \rightarrow \infty}\left(w_{1}^{\prime}\right)^{2 h_{1}}\left(\bar{w}_{1}^{\prime}\right)^{2 \bar{h}_{1}}\left\langle\phi_{1}\left(w_{1}^{\prime}, \bar{w}_{1}^{\prime}\right) \phi_{2}(1,1) \phi_{3}(x, \bar{x}) \phi_{4}(0,0)\right\rangle \\ &=\bra{\phi_1} \phi_{2}(1,1) \phi_{3}(x, \bar{x})\ket{\phi_4} \end{aligned}
 \end{equation}
 我们引入$ Y_{43}^{21}(x, \bar{x}) $：
 \begin{equation}
@@ -323,7 +323,7 @@ $z=z_1$ 处是发散的，不过可以考虑取极限 $z=z_1'\to z_1 $，我们�
 \begin{equation}
 	\begin{aligned} &\left\langle\phi_{1}\left(z_{1}, \bar{z}_{1}\right) \phi_{2}\left(z_{2}, \bar{z}_{2}\right) \phi_{3}\left(z_{3}, \bar{z}_{3}\right) \phi_{4}\left(z_{4}, \bar{z}_{4}\right)\right\rangle \\ =&\left(\frac{z_{42}}{z_{41} z_{21}}\right)^{h_{1}}\left(\frac{z_{21}}{z_{42} z_{41}}\right)^{h_{4}}\left(\frac{z_{41} z_{21}}{z_{42} z_{31}^{2}}\right)^{h_{3}}\left(\frac{z_{41}}{z_{42} z_{21}}\right)^{h_{2}} \\ & \times\left(\frac{\bar{z}_{42}}{\bar{z}_{41} \bar{z}_{21}}\right)^{\bar{h}_{1}}\left(\frac{\bar{z}_{21}}{\bar{z}_{42} \bar{z}_{41}}\right)^{\bar{h}_{4}}\left(\frac{\bar{z}_{41} \bar{z}_{21}}{\bar{z}_{42} \bar{z}_{31}^{2}}\right)^{\bar{h}_{3}}\left(\frac{\bar{z}_{41}}{\bar{z}_{42} \bar{z}_{21}}\right)^{\bar{h}_{2}} G_{23}^{41}(1-x, 1-\bar{x}) \end{aligned}
 \end{equation}
-比对 (4.64),(4.71) 可知，差一个相位因子的意义上有
+比对 (4.64) 和 (4.71) 可知，差一个相位因子的意义上有
 \begin{equation}
 	G_{43}^{21}(x, \bar{x})=G_{23}^{41}(1-x, 1-\bar{x})
 \end{equation}
@@ -349,14 +349,14 @@ $A_{43}^{21}(p | x, \bar{x}) $可进一步分解成
 \begin{equation}
 	A_{43}^{21}(p | x, \bar{x})=F_{43}^{21}(p| x) \bar{F}_{43}^{21}(p | \bar{x})
 \end{equation}
-其中
+其中\footnote{[这里用到了，$C_{12}^p=\left\langle\phi_{1}\left|\phi_{2}(1,1)\right| \phi_{p}\right\rangle$，详见大黄书P181.]}
 \begin{equation}
 	F_{43}^{21}(p |x)=x^{h_{p}-h_{3}-h_{4}} \sum_{\{n\}} \beta_{43}^{p\{n\}}x^{\sum_{i=1}^{k} n_{i}} \frac{\left\langle\phi_{1}\left|\phi_{2}(1,1) L_{-n_{1}} \cdots L_{-n_{k}}\right| \phi_{p}\right\rangle}{\left\langle\phi_{1}\left|\phi_{2}(1,1)\right| \phi_{p}\right\rangle}
 \end{equation}
-因此，${43}^{21}(p |x)$ 是构造四点函数的基础材料，称为\textbf{共形块（conformal block）}。
+因此，$F_{43}^{21}(p |x)$ 是构造四点函数的基础材料，称为\textbf{共形块（conformal block）}。
 
 交叉对称性 (4.72) 成为
 \begin{equation}
 	\sum_{p} C_{43}^{p} C_{12}^{p} F_{43}^{21}(p | x) \bar{F}_{43}^{21}(p | \bar{x})=\sum_{q} C_{32}^{p} C_{14}^{q} F_{32}^{41}(q | 1-x) \bar{F}_{32}^{41}(q | 1-\bar{x})
 \end{equation}
-如果算出共形块，这就给出OPE系数 $C_{n m}^{l} $和共形权 $h_i $的方程。通过求解它，可以考察CFT的关联函数。这个方程是非线性的，很难解，不过人们已经详细研究了极小模型的结构。
+如果算出共形块，这就给出OPE系数 $C_{n m}^{l} $和共形权 $h_i $的方程。通过求解它，可以考察CFT的关联函数。这个方程是非线性的，很难求解，不过人们已经详细研究了极小模型的结构。

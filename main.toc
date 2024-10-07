@@ -61,9 +61,9 @@
 \contentsline {subsection}{\numberline {6.3.1} 环面的模变换}{107}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2} Poisson公式}{108}{subsection.6.3.2}%
 \contentsline {subsection}{\numberline {6.3.3}theta函数的模变换}{109}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Virasoro特征标的模变换}{112}{subsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.3.5}ADE分类}{116}{subsection.6.3.5}%
-\contentsline {section}{\numberline {6.4}模不变性的应用}{117}{section.6.4}%
+\contentsline {subsection}{\numberline {6.3.4}Virasoro特征标的模变换}{111}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}ADE分类}{115}{subsection.6.3.5}%
+\contentsline {section}{\numberline {6.4}模不变性的应用}{116}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Verlinde公式}{119}{section.6.5}%
 \contentsline {chapter}{\numberline {第七章\hspace {.3em}}边界共形场论}{121}{chapter.7}%
 \contentsline {section}{\numberline {7.1} 两点函数}{121}{section.7.1}%
