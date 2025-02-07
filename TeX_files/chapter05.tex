@@ -2,9 +2,9 @@
 本章考虑Virasoro代数的退化表示，并介绍零模向量。所有初级场都是二重退化表示的CFT称为极小模型，是二维CFT中最基本的。极小模型中，退化初级场的关联函数满足解有固定奇点的微分方程，解它可得到共形块。此外，利用单值变换下的不变性，可以得到对关联函数的约束，算出OPE系数。我们也会解释由Dotsenko-Fateev提出的极小模型的自由场表示，这是推导关联函数的积分表示的系统方法。
 
 \section{Virasoro代数的退化表示}
-共形场论局域场的空间 $\mathcal{A} $是初级场$ \phi_i$ 所属的共形类$ [\phi_i]$ 的直和： $\mathcal{A}=\oplus_{i}\left[\phi_{i}\right]$ 。如果 $\phi_i$ 的共形权是 $(h_i,\bar{h}_i) $，共形类$ [\phi_i] $就可写成Virasoro代数右模（ $L_n$ ）和左模（ $\bar{L}_n$ ）的表示 $V_{h_{i}}, \bar{V}_{\bar{h}_{i}} $的张量积： $\left[\phi_{i}\right]=V_{h_{i}} \otimes \bar{V}_{\bar{h}_{i}} $。这里用了态-算符对应，将场和Hilbert空间中的态视作等同。Verma模 $V_h$ 由最高权态 $|h\rangle$ 和它的次级态 $L_{-n_{1}} \cdots L_{-n_{k}}|h\rangle$ （ $n_{1} \geq \cdots \geq n_{k}>0$ ）生成。最高权态 $|h\rangle$ 满足 $L_{n}|h\rangle=0(n>0) $， $L_{0}|h\rangle=h|h\rangle $。
+共形场论局域场的空间 $\mathcal{A} $是初级场$ \phi_i$ 所属的共形类$ [\phi_i]$ 的直和： $\mathcal{A}=\oplus_{i}\left[\phi_{i}\right]$ 。如果 $\phi_i$ 的共形权是 $(h_i,\bar{h}_i) $，共形类$ [\phi_i] $就可写成Virasoro代数右模（$L_n$）和左模（$\bar{L}_n$）的表示 $V_{h_{i}}, \bar{V}_{\bar{h}_{i}} $的张量积： $\left[\phi_{i}\right]=V_{h_{i}} \otimes \bar{V}_{\bar{h}_{i}} $。这里用了态-算符对应，将场和Hilbert空间中的态视作等同。Verma模 $V_h$ 由最高权态 $|h\rangle$ 和它的次级态 $L_{-n_{1}} \cdots L_{-n_{k}}|h\rangle$ （$n_{1} \geq \cdots \geq n_{k}>0$）生成。最高权态 $|h\rangle$ 满足 $L_{n}|h\rangle=0(n>0) $， $L_{0}|h\rangle=h|h\rangle $。
 
-Verma模$ V_h $未必是Virasoro代数的不可约表示，也可能是不可约表示之和。有Verma模 $V_h$ 的元素$ |h+N\rangle$ （ N 是正整数）满足
+Verma模$ V_h $未必是Virasoro代数的不可约表示，也可能是不可约表示之和。有Verma模$V_h$的元素$|h+N\rangle$（N 是正整数）满足
 \begin{align} &L_{n}|h+N\rangle=0, \quad n>0 \\ &L_{0}|h+N\rangle=(h+N)|h+N\rangle \end{align}
 时，$ L_{-n} $作用在 $|h+N\rangle $上生成的空间 $V_{h+N}$ 是Virasoro代数的表示空间。这个态$ |h+N\rangle$ 称为级为 $N $的\textbf{零模向量（null vector）}或\textbf{奇异向量（singular vector）}。对应零模向量的共形场称为\textbf{零模场（null field）}。如果 $|h+N\rangle $是级为 N 的零模向量，Verma模中任何元素 $L_{-n_{1}} \cdots L_{-n_{k}}|h\rangle $与它的内积将是
 \begin{equation}
@@ -296,7 +296,7 @@ $\phi_{(1,2)} $同时也是 $\phi_{\left(\alpha_{+}+2 \alpha_{-}\right)} $，那
 	\left[\phi_{(1,2)}\right]\left[\phi_{(1,2)}\right]=\left[\phi_{(1,1)}\right]+\left[\phi_{(1,3)}\right]
 \end{equation}
 
-考虑融合规则的代数性质时，也称它为\textbf{融合代数（fusion algebra）}。OPE代数有结合律，那么融合规则就有结合律，自然地也有分配律。 (5.60) 两边作用在 $[\phi(\alpha)] $上。由 (5.58) ，左边是
+考虑融合规则的代数性质时，也称它为\textbf{融合代数（fusion algebra）}。OPE代数有结合律，那么融合规则就有结合律，自然地也有分配律。 (5.60) 两边作用在 $[\phi(\alpha)] $上。由(5.58)，左边是
 \begin{equation}
 	\begin{aligned} \left(\left[\phi_{(1,2)}\right]\left[\phi_{(1,2)}\right]\right)\left[\phi_{(\alpha)}\right] &=\left[\phi_{(1,2)}\right]\left(\left[\phi_{(1,2)}\right]\left[\phi_{(\alpha)}\right]\right) \\ &=\left[\phi_{(1,2)}\right]\left(\left[\phi_{\left(\alpha-\alpha_{-}\right)}\right]+\left[\phi_{\alpha+\alpha_{+}}\right]\right) \\ &=\left[\phi_{\left(\alpha-2 \alpha_{-}\right)}\right]+2\left[\phi_{(\alpha)}\right]+\left[\phi_{\left(\alpha+2 \alpha_{-}\right)}\right] \end{aligned}
 \end{equation}
@@ -368,7 +368,7 @@ $$
 \end{equation}
 这时， $p \alpha_{-}+q \alpha_{+}=0$ ，初级场间有了新的关系。由 (5.29) ，初级场 $\phi_{(n, m)}$ 的共形权 $h_{n,m} $满足
 \begin{align} &h_{n+q, m+p}=h_{n, m}\\ &h_{q-n, p-m}=h_{n, m} \\ &h_{n, m}+n m=h_{n+q, p-m}=h_{q-n, p+m} \\ &h_{n, m}+(q-n)(p-m)=h_{n, 2 p-m}=h_{2 q-n, m} \end{align}
-这说明，初级场 $\phi_{(n, m)} $的Verma模中级为$ nm$ （ $(q-n)(p-m)$ ）的零模态，属于初级场 $\phi_{(n+q, p-m)}$ 或 $\phi_{(q-n, p+m)} $（ $\phi_{(n, 2p-m)}$ 或 $\phi_{(2q-n, m)}$ ）的Kac谱。因此， $\alpha_-/\alpha_+$ 是有理数时，初级场 $\phi_{(n, m)}$ 有级为 $nm$ 和 $(q-n)(p-m)$ 的零模场。
+这说明，初级场 $\phi_{(n, m)} $的Verma模中级为$ nm$（$(q-n)(p-m)$）的零模态，属于初级场 $\phi_{(n+q, p-m)}$ 或 $\phi_{(q-n, p+m)}$（ $\phi_{(n, 2p-m)}$ 或 $\phi_{(2q-n, m)}$）的Kac谱。因此， $\alpha_-/\alpha_+$ 是有理数时，初级场 $\phi_{(n, m)}$ 有级为 $nm$ 和 $(q-n)(p-m)$ 的零模场。\footnote{[这句话初看起来似乎有点绕口，其实就是在说$\phi_{(n,m)}$的$nm$级次级态的共形权刚好是$\phi_{(n+q,p-m)}$(或者$\phi_{(q-n,p+m)}$)的共形权，极小模型认为共形权不存在简并，所以这个初级场就是个零模，那么这个初级场就要被剔除掉。]}
 
 令零模场等价成$0$，可以得到Virasoro代数的不可约表示。可以看到，Kac谱中只剩下有限个独立的初级场，对应$ n=1,2,...,q-1$ ， $m=1,2,...,p-1$ 。此外，根据对称性 (5.75) 令 $\phi_{(q-n, p-m)} $和 $\phi_{(n, m)}$ 等价，就只剩下 $(p-1)(q-1)/2 $个初级场。接着，由$ p \alpha_{-}+q \alpha_{+}=0 $和 $\alpha_{+} \alpha_{-}=-1 $解得
 \begin{equation}
@@ -406,7 +406,7 @@ $$
 $\phi_{(1,3)}=\phi_{(1,2)} $意味着
 \begin{equation}
 	[\varphi][\varphi]=[I]+[\varphi]
-\end{equation}\quad \quad (5.82)
+\end{equation}
 
 $\varphi $自身的融合规则还可写成
 \begin{align} &\left[\phi_{(1,2)}\right]\left[\phi_{(1,3)}\right]=\left[\phi_{(1,2)}\right]+\left[\phi_{(1,4)}\right]\\ &\left[\phi_{(1,3)}\right]\left[\phi_{(1,3)}\right] \stackrel{?}{=}\left[\phi_{(1,1)}\right]+\left[\phi_{(1,3)}\right]+\left[\phi_{(1,5)}\right] \end{align}
@@ -453,7 +453,7 @@ $\sigma$ 和$ \epsilon $的融合规则是
 上式对$k,l$的求和约定与(5.72)相同。
 
 \section{Kac行列式和酉性}
-极小模型由一对正整数 $(p,q)$ 标记。有些是非酉的，例如Yang-Lee边界奇点 $(p,q)=(5,2)$ ，有些则是酉的，例如Ising模型 $(p,q)=(4,3) $。极小模型中的酉性如何表征呢？
+极小模型由一对正整数 $(p,q)$ 标记。有些是非酉的，例如Yang-Lee边界奇点 $(p,q)=(5,2)$，有些则是酉的，例如Ising模型 $(p,q)=(4,3) $。极小模型中的酉性如何表征呢？
 
 考虑最高权态 $|h\rangle$ 和它的次级态组成的Verma模 $V_h $中内积的正定性。次级态
 \begin{equation}
@@ -469,7 +469,6 @@ $p(N) $是$ N$ 的拆分数，可通过对无穷乘积
 \begin{equation}
 	P(q)=\prod_{n=1}^{\infty}\left(1-q^{n}\right)
 \end{equation}
-\quad \quad (5.94)
 的倒数作Taylor展开：
 \begin{equation}
 	\prod_{n=1}^{\infty}\left(1-q^{n}\right)^{-1}=\sum_{n=0}^{\infty} p(n) q^{n}, \quad|q|<1
@@ -485,7 +484,7 @@ $p(N) $是$ N$ 的拆分数，可通过对无穷乘积
 $$
 \frac{\langle h,\{n'\}|\{n\},h\rangle}{\langle h|h\rangle}
 $$
-称为Shapovarov形式。因为$ |\{n\},h\rangle$ 是Virasoro算符 $L_0 $的本征值为 $h+N $（ $N=\sum_{i=1}^{k} n_{i}$ ）的本征态，只有同级态间的内积非零。考虑级为 $N$ 的次级态间归一化内积的矩阵
+称为Shapovarov形式。因为$ |\{n\},h\rangle$ 是Virasoro算符 $L_0 $的本征值为$h+N$（$N=\sum_{i=1}^{k} n_{i}$）的本征态，只有同级态间的内积非零。考虑级为 $N$ 的次级态间归一化内积的矩阵
 \begin{equation}
 	M(c, h)_{N}=\left(\frac{\left\langle h,\left\{n^{\prime}\right\} |\{n\}, h\right\rangle}{\langle h | h\rangle}\right)
 \end{equation}
@@ -561,9 +560,9 @@ $0<c<1 $时，$Kac$行列式的正负区域由曲线 $h=h_{n, m}(c)$ 分开。�
 	\caption{绕$x=0,1$时经历的单值变换。}
 \end{figure}
 
-从点 $x$ 出发，逆时针沿绕 $x=0 $的闭合曲线时经历的变换记作 $g_0$ ，绕 $x=1$ 的记作 $g_1$ ，如图5.3。因为绕无穷远点的 $g_\infty $由$ g_1g_0 $生成，验证 $g_0,g_1 $下不变就足够了。
+从点$x$出发，逆时针沿绕$x=0 $的闭合曲线时经历的变换记作$g_0$ ，绕 $x=1$的记作$g_1$，如图5.3。因为绕无穷远点的$g_\infty $由$ g_1g_0 $生成，验证$g_0,g_1$下不变就足够了。
 
-绕$ x=0$ 一圈，也就是 $x \rightarrow x e^{2 \pi i} $， $y_{1}^{(0)}(x), y_{2}^{(0)}(x) $变换为
+绕$ x=0$一圈，也就是$x \rightarrow x e^{2 \pi i} $， $y_{1}^{(0)}(x), y_{2}^{(0)}(x) $变换为
 \begin{equation}
 	g_{0}\left(\begin{array}{c} y_{1}^{(0)}(x) \\ y_{2}^{(0)}(x) \end{array}\right)=\left(\begin{array}{cc} 1 & 0 \\ 0 & \omega_{0} \end{array}\right)\left(\begin{array}{l} y_{1}^{(0)}(x) \\ y_{2}^{(0)}(x) \end{array}\right)
 \end{equation} 
@@ -575,11 +574,11 @@ $$
 $$
 		X_{k l}\left(g_{0}\right)_{k k} \overline{\left(g_{0}\right)}_{l l}=X_{k l} 
 $$
-那么 $i\neq j $时 $X_{ij}=0 $。因此四点函数可写成
+那么$i\neq j $时$X_{ij}=0 $。因此四点函数可写成
 \begin{equation}
 	G_{32}^{10}(x, \bar{x})=|x|^{2 a_{1}+2 a_{2}}|1-x|^{2 b_{1}+2 b_{2}} \sum_{i=1}^{2} X_{i i} y_{i}^{(0)}(x) \overline{y_{i}^{(0)}(x)} 
 \end{equation}
-考虑 $x=1$ 附近的单值变换。令 $\xi=1-x $， (5.41) 成为
+考虑$x=1$ 附近的单值变换。令$\xi=1-x $， (5.41) 成为
 \begin{equation}
 	\xi(1-\xi) \frac{d^{2} y}{d \xi^{2}}+(\alpha+\beta+1-\gamma-(\alpha+\beta+1) \xi) \frac{d y}{d \xi}-\alpha \beta y=0
 \end{equation} 
@@ -597,7 +596,7 @@ $$
 \begin{equation}
 	\xi(1-\xi) \frac{d^{2} y^{\prime}}{d \xi^{2}}+(\alpha-\beta+1-(2 \alpha-\gamma+2) \xi) \frac{d y^{\prime}}{d \xi}-\alpha(\alpha-\gamma+1) y^{\prime}=0
 \end{equation} 
-那么这时的级数解$ y_{1}^{(\infty)}(x), y_{2}^{(\infty)}(x) $相比$ x=0$ 附近的，要将$ \alpha,\beta,\gamma$ 换成 $\alpha,\alpha-\gamma+1,\alpha-\beta+1$ ：
+那么这时的级数解$ y_{1}^{(\infty)}(x), y_{2}^{(\infty)}(x) $相比$ x=0$ 附近的，要将$ \alpha,\beta,\gamma$ 换成 $\alpha,\alpha-\gamma+1,\alpha-\beta+1$：
 \begin{equation}
 	\begin{aligned} &y_{1}^{(\infty)}(x)=x^{-\alpha} F\left(\alpha, \alpha+1-\gamma, \alpha+1-\beta, \frac{1}{x}\right) \\ &y_{2}^{(\infty)}(x)=x^{-\beta} F\left(\beta, \beta+1-\gamma, \beta+1-\alpha, \frac{1}{x}\right) \end{aligned}
 \end{equation}
@@ -606,7 +605,7 @@ $$
 	g_{\infty}\left(\begin{array}{c} y_{1}^{(\infty)}(x) \\ y_{2}^{(\infty)}(x) \end{array}\right)=\left(\begin{array}{cc} e^{-2 \pi i \alpha} & 0 \\ 0 & e^{-2 \pi i \beta} \end{array}\right)\left(\begin{array}{l} y_{1}^{(\infty)}(x) \\ y_{2}^{(\infty)}(x) \end{array}\right)
 \end{equation} 
 这三点附近的基本解间有关系
-\begin{align} &y_{i}^{(0)}(x)=\sum_{j=1}^{2} a_{i j} y_{j}^{(1)}(x \\ &y_{i}^{(0)}(x)=\sum_{j=1}^{2} b_{i j} y_{j}^{(\infty)}(x) \end{align}
+\begin{align} &y_{i}^{(0)}(x)=\sum_{j=1}^{2} a_{i j} y_{j}^{(1)}(x) \\ &y_{i}^{(0)}(x)=\sum_{j=1}^{2} b_{i j} y_{j}^{(\infty)}(x) \end{align}
 借助超几何级数的解析延拓公式\footnote{犬井鉄郎，『特殊函数』，岩波全書，1962.}
 \begin{align} F(\alpha, \beta, \gamma, x)=& \frac{\Gamma(\gamma) \Gamma(\gamma-\alpha-\beta)}{\Gamma(\gamma-\alpha) \Gamma(\gamma-\beta)} F(\alpha, \beta, 1+\alpha+\beta-\gamma, 1-x) \notag\\ &+\frac{\Gamma(\gamma) \Gamma(\alpha+\beta-\gamma)}{\Gamma(\alpha) \Gamma(\beta)}(1-x)^{\gamma-\alpha-\beta} \\ & \times F(\gamma-\beta, \gamma-\alpha, 1+\gamma-\alpha-\beta, 1-x)\notag\\ F(\alpha, \beta, \gamma, x)=& \frac{\Gamma(\gamma) \Gamma(\beta-\alpha)}{\Gamma(\beta) \Gamma(\gamma-\alpha)}(-x)^{-\alpha} F\left(\alpha, 1+\alpha-\gamma, 1+\alpha-\beta, \frac{1}{x}\right) \notag\\ &+\frac{\Gamma(\gamma) \Gamma(\alpha-\beta)}{\Gamma(\alpha) \Gamma(\gamma-\beta)}(-x)^{-\beta} F\left(\beta, 1+\beta-\gamma, 1+\beta-\alpha, \frac{1}{x}\right) \end{align}
 我们得到变换矩阵$ a_{ij},b_{ij} $是
@@ -648,7 +647,7 @@ $$
 其中
 \begin{align} &N_{1}=\frac{\Gamma\left(4/5\right) \Gamma\left(3/5\right)^{2} \Gamma\left(2/5\right)}{\Gamma\left(6/5\right)} \\ &N_{2}=-\frac{\Gamma\left(1/5\right) \Gamma\left(2/5\right)^{2} \Gamma\left(3/5\right)}{\Gamma\left(4/5\right)^{2}} \end{align}
 
-接着考虑Ising模型，它含恒等算符 $\boldsymbol{I}$ （ $h=\bar{h}=0 $），自旋算符$ \sigma(z, \bar{z})=\phi_{(1,2)}(z, \bar{z})$ （ $h=\bar{h}=1/16$ ）和能量密度算符 $\epsilon(z, \bar{z})=\phi_{(2,1)}(z, \bar{z}) $（ $h=\bar{h}=1/2 $）。考虑自旋算符的四点函数
+接着考虑Ising模型，它含恒等算符 $\boldsymbol{I}$($h=\bar{h}=0$)，自旋算符$ \sigma(z, \bar{z})=\phi_{(1,2)}(z, \bar{z})$( $h=\bar{h}=1/16$)和能量密度算符$\epsilon(z, \bar{z})=\phi_{(2,1)}(z, \bar{z})$($h=\bar{h}=1/2 $)。考虑自旋算符的四点函数
 $$
 \left\langle\sigma\left(z_{0}, \bar{z}_{0}\right) \sigma\left(z_{1}, \bar{z}_{1}\right) \sigma\left(z_{2}, \bar{z}_{2}\right) \sigma\left(z_{3}, \bar{z}_{3}\right)\right\rangle
 $$
@@ -836,7 +835,7 @@ $$
 \begin{equation}
 	\bar{\beta}_{n, m}=2 \alpha_{0}-\beta_{n, m}=\frac{1}{2}(1+n) \alpha_{+}+\frac{1}{2}(1+m) \alpha_{-} 
 \end{equation}
-那么，对应Kac谱中 $h_{n,m}$ 的初级场 $\phi_{(n, m)}(z) $，对应顶点算符 $V_{\beta_{n, m}}(z) $和$ V_{\bar{\beta}_{n, m}}(z) $。
+那么，Kac谱中共形权$h_{n,m}$的初级场$\phi_{(n, m)}(z) $，对应顶点算符 $V_{\beta_{n, m}}(z) $和$ V_{\bar{\beta}_{n, m}}(z) $。
 
 \section{关联函数的自由场表示}
 如何基于上节极小模型和自由场的对应，来表示初级场的关联函数呢？背景荷的效果，相当于$ z=\infty $处有带荷 $-2\alpha_0 $的顶点算符 $V_{-2 \alpha_{0}}(\infty) $。这时顶点算符 $V_{\beta_{1}}\left(z_{1}\right), \cdots, V_{\beta_{N}}\left(z_{N}\right) $的关联函数，等价于这样一个含 $V_{-2 \alpha_{0}}(\infty)$ 的 $N+1$ 点函数，像 (4.65) 那样定义为
@@ -919,7 +918,7 @@ $C$ 是闭合曲线时，这为零。那么在关联函数中插入这线积分�
 \begin{equation}
 	\beta_{n_{1}, m_{1}}+\beta_{1,2}+\beta_{n_{3}, m_{3}}-\beta_{n_{4}, m_{4}}+\alpha_{-}=0
 \end{equation} \quad \quad (5.208)
-在积分 (5.206) 中，因为被积函数存在分支，我们选取使积分单值的闭合路径 $S$ 。这样的路径称为\textbf{Pochhammer积分路径}，有如图5.4(a)(b)两种选法。
+在积分 (5.206) 中，因为被积函数存在分支，我们选取使积分单值的闭合路径 $S$。这样的路径称为\textbf{Pochhammer积分路径}，有如图5.4(a)(b)两种选法。
 
 \begin{figure}[h]
 	\centering

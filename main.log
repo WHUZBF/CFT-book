@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.7.14)  7 OCT 2024 22:50
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.7.14)  8 FEB 2025 01:45
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1418,7 +1418,7 @@ cmm/m/it/12 h[]; []\OT1/cmr/m/n/12 )$ |\LTJY3/SimSun(0)/m/n/12 的 |准 |初 |
 [29]
 
 [30]
-<fig/3.1.png, id=809, 464.73625pt x 287.0725pt>
+<fig/3.1.png, id=805, 464.73625pt x 287.0725pt>
 File: fig/3.1.png Graphic file (type png)
 <use fig/3.1.png>
 Package luatex.def Info: fig/3.1.png  used on input line 169.
@@ -1430,7 +1430,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [31]
-<fig/3.2.png, id=818, 609.27625pt x 276.03125pt>
+<fig/3.2.png, id=814, 609.27625pt x 276.03125pt>
 File: fig/3.2.png Graphic file (type png)
 <use fig/3.2.png>
 Package luatex.def Info: fig/3.2.png  used on input line 196.
@@ -1440,7 +1440,7 @@ Package luatex.def Info: fig/3.2.png  used on input line 196.
 [32<./fig/3.1.png><./fig/3.2.png>]
 
 [33]
-<fig/3.3.png, id=842, 885.3075pt x 511.9125pt>
+<fig/3.3.png, id=838, 885.3075pt x 511.9125pt>
 File: fig/3.3.png Graphic file (type png)
 <use fig/3.3.png>
 Package luatex.def Info: fig/3.3.png  used on input line 256.
@@ -1453,7 +1453,7 @@ Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 292.
 
-<fig/3.4.png, id=851, 762.85pt x 354.32375pt>
+<fig/3.4.png, id=847, 762.85pt x 354.32375pt>
 File: fig/3.4.png Graphic file (type png)
 <use fig/3.4.png>
 Package luatex.def Info: fig/3.4.png  used on input line 307.
@@ -1558,7 +1558,7 @@ t with language dflt
 [55]
 
 [56]
-<fig/4.1.png, id=1105, 983.675pt x 245.91875pt>
+<fig/4.1.png, id=1101, 983.675pt x 245.91875pt>
 File: fig/4.1.png Graphic file (type png)
 <use fig/4.1.png>
 Package luatex.def Info: fig/4.1.png  used on input line 158.
@@ -1613,7 +1613,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [73]
 
 [74]
-<fig/5.1.png, id=1333, 494.84875pt x 380.42125pt>
+<fig/5.1.png, id=1329, 494.84875pt x 380.42125pt>
 File: fig/5.1.png Graphic file (type png)
 <use fig/5.1.png>
 Package luatex.def Info: fig/5.1.png  used on input line 355.
@@ -1624,14 +1624,10 @@ Package luatex.def Info: fig/5.1.png  used on input line 355.
 
 [76]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
 [77]
 
 [78]
-<fig/5.2notag.png, id=1383, 914.41624pt x 321.2pt>
+<fig/5.2notag.png, id=1381, 914.41624pt x 321.2pt>
 File: fig/5.2notag.png Graphic file (type png)
 <use fig/5.2notag.png>
 Package luatex.def Info: fig/5.2notag.png  used on input line 465.
@@ -1641,10 +1637,10 @@ Package luatex.def Info: fig/5.2notag.png  used on input line 465.
 [79<./fig/5.2notag.png>]
 
 [80]
-<fig/5.2.png, id=1409, 1013.7875pt x 398.48875pt>
+<fig/5.2.png, id=1407, 1013.7875pt x 398.48875pt>
 File: fig/5.2.png Graphic file (type png)
 <use fig/5.2.png>
-Package luatex.def Info: fig/5.2.png  used on input line 543.
+Package luatex.def Info: fig/5.2.png  used on input line 542.
 (luatex.def)             Requested size: 334.60422pt x 131.51993pt.
 
 
@@ -1653,10 +1649,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [81]
-<fig/5.3.png, id=1424, 552.0625pt x 364.36125pt>
+<fig/5.3.png, id=1422, 552.0625pt x 364.36125pt>
 File: fig/5.3.png Graphic file (type png)
 <use fig/5.3.png>
-Package luatex.def Info: fig/5.3.png  used on input line 560.
+Package luatex.def Info: fig/5.3.png  used on input line 559.
 (luatex.def)             Requested size: 286.80779pt x 189.30214pt.
 
 
@@ -1683,7 +1679,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [90]
 
 [91]
-Overfull \hbox (30.19458pt too wide) in paragraph at lines 858--859
+Overfull \hbox (30.19458pt too wide) in paragraph at lines 857--858
 []|\LTJY3/SimSun(0)/m/n/12 四 |点 |函 |数 |呢 [] |我 |们 |想 |表 |示 
 |共 |形 |权 |为 $\OML/cmm/m/it/12 h$ |\LTJY3/SimSun(0)/m/n/12 的 |初 |
 级 |场 $\OML/cmm/m/it/12 []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/1
@@ -1695,10 +1691,10 @@ Overfull \hbox (30.19458pt too wide) in paragraph at lines 858--859
 [92]
 
 [93]
-<fig/5.4.png, id=1600, 986.68625pt x 199.74625pt>
+<fig/5.4.png, id=1598, 986.68625pt x 199.74625pt>
 File: fig/5.4.png Graphic file (type png)
 <use fig/5.4.png>
-Package luatex.def Info: fig/5.4.png  used on input line 926.
+Package luatex.def Info: fig/5.4.png  used on input line 925.
 (luatex.def)             Requested size: 286.80779pt x 58.06207pt.
 )
 
@@ -1715,7 +1711,7 @@ Package luatex.def Info: fig/5.4.png  used on input line 926.
 
 ]
 第六章
-<fig/6.1.png, id=1639, 868.24374pt x 401.5pt>
+<fig/6.1.png, id=1637, 868.24374pt x 401.5pt>
 File: fig/6.1.png Graphic file (type png)
 <use fig/6.1.png>
 Package luatex.def Info: fig/6.1.png  used on input line 7.
@@ -1725,12 +1721,12 @@ Package luatex.def Info: fig/6.1.png  used on input line 7.
 [97<./fig/6.1.png>]
 
 [98]
-<fig/6.2.png, id=1662, 880.28876pt x 358.33875pt>
+<fig/6.2.png, id=1660, 880.28876pt x 358.33875pt>
 File: fig/6.2.png Graphic file (type png)
 <use fig/6.2.png>
 Package luatex.def Info: fig/6.2.png  used on input line 61.
 (luatex.def)             Requested size: 286.80779pt x 116.7485pt.
-<fig/6.3.png, id=1663, 913.4125pt x 414.54875pt>
+<fig/6.3.png, id=1661, 913.4125pt x 414.54875pt>
 File: fig/6.3.png Graphic file (type png)
 <use fig/6.3.png>
 Package luatex.def Info: fig/6.3.png  used on input line 69.
@@ -1758,7 +1754,7 @@ Missing character: There is no ・ (U+30FB) in font name:SimSun:mode=node;script
 ]
 
 [106]
-<fig/6.5.png, id=1783, 1135.24126pt x 353.32pt>
+<fig/6.5.png, id=1781, 1135.24126pt x 353.32pt>
 File: fig/6.5.png Graphic file (type png)
 <use fig/6.5.png>
 Package luatex.def Info: fig/6.5.png  used on input line 244.
@@ -1803,7 +1799,7 @@ LTJY3/SimSun(0)/m/n/12 和 \TU/lmr/m/n/12 Dedekind eta |\LTJY3/SimSun(0)/m/n/12
 \openout2 = ./TeX_files/chapter07.aux
  (./TeX_files/chapter07.tex
 第七章
-<fig/7.1.png, id=1972, 491.8375pt x 389.455pt>
+<fig/7.1.png, id=1970, 491.8375pt x 389.455pt>
 File: fig/7.1.png Graphic file (type png)
 <use fig/7.1.png>
 Package luatex.def Info: fig/7.1.png  used on input line 13.
@@ -1823,7 +1819,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [122<./fig/7.1.png>]
 
 [123]
-<fig/7.2.png, id=2011, 433.62pt x 426.59375pt>
+<fig/7.2.png, id=2009, 433.62pt x 426.59375pt>
 File: fig/7.2.png Graphic file (type png)
 <use fig/7.2.png>
 Package luatex.def Info: fig/7.2.png  used on input line 121.
@@ -1839,7 +1835,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [125<./fig/7.2.png>]
 
 [126]
-<fig/7.3.png, id=2044, 891.33pt x 351.3125pt>
+<fig/7.3.png, id=2042, 891.33pt x 351.3125pt>
 File: fig/7.3.png Graphic file (type png)
 <use fig/7.3.png>
 Package luatex.def Info: fig/7.3.png  used on input line 217.
@@ -1853,7 +1849,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [127]
 
 [128<./fig/7.3.png>]
-<fig/7.4.png, id=2074, 1002.74625pt x 330.23375pt>
+<fig/7.4.png, id=2072, 1002.74625pt x 330.23375pt>
 File: fig/7.4.png Graphic file (type png)
 <use fig/7.4.png>
 Package luatex.def Info: fig/7.4.png  used on input line 254.
@@ -1865,7 +1861,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [129]
-<fig/7.5.png, id=2090, 390.45876pt x 401.5pt>
+<fig/7.5.png, id=2088, 390.45876pt x 401.5pt>
 File: fig/7.5.png Graphic file (type png)
 <use fig/7.5.png>
 Package luatex.def Info: fig/7.5.png  used on input line 284.
@@ -1883,7 +1879,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [132]
 
 [133]
-<fig/7.6.png, id=2145, 518.93875pt x 270.00874pt>
+<fig/7.6.png, id=2143, 518.93875pt x 270.00874pt>
 File: fig/7.6.png Graphic file (type png)
 <use fig/7.6.png>
 Package luatex.def Info: fig/7.6.png  used on input line 402.
@@ -1911,15 +1907,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30859 strings out of 475915
- 195475,1977958 words of node,token memory allocated
- 39682 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 95 glue, 4 kern, 1 glyph, 17621 attribute, 58 glue_
-spec, 1611 attribute_list, 2 write, 11 user_defined, 2 pdf_action nodes
+ 30860 strings out of 475915
+ 195473,1977958 words of node,token memory allocated
+ 39713 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 96 glue, 4 kern, 1 glyph, 17632 attribute, 58 glue_
+spec, 1612 attribute_list, 2 write, 11 user_defined, 2 pdf_action nodes
    avail lists: 1:5,2:40278,3:743,4:704,5:679,6:104,7:5275,8:104,9:2477,10:33,11
 :170,12:1
  51301 multiletter control sequences out of 65536+600000
- 124 fonts using 149645183 bytes
+ 124 fonts using 149741503 bytes
  103i,21n,111p,1209b,1131s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><d:/te
 xlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><d:/texlive/
@@ -1950,10 +1946,10 @@ amsfonts/cm/cmsy6.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm
 <d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb><d:/texlive/
 2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (142 pages, 1445270 bytes).
+Output written on main.pdf (142 pages, 1499880 bytes).
 
-PDF statistics: 2358 PDF objects out of 2487 (max. 8388607)
- 2113 compressed objects within 22 object streams
- 1204 named destinations out of 1440 (max. 131072)
+PDF statistics: 2356 PDF objects out of 2487 (max. 8388607)
+ 2111 compressed objects within 22 object streams
+ 1205 named destinations out of 1440 (max. 131072)
  600 words of extra memory for PDF output out of 10000 (max. 100000000)
 

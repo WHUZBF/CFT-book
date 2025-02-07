@@ -7,8 +7,8 @@
 - [x] Chap1
 - [x] Chap2
 - [x] Chap3
-- [ ] Chap4
-- [ ] Chap5
+- [x] Chap4
+- [x] Chap5
 - [ ] Chap6
 - [ ] Chap7
 
